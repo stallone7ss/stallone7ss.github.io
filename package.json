@@ -1,0 +1,17 @@
+{
+  "name": "kilstar-ict-consultants",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kilstar ICT and Business Consultants — enterprise IT & cybersecurity services website (static, Tailwind CSS v4 + vanilla JS).",
+  "scripts": {
+    "build": "npm run build:html && npm run build:css",
+    "build:html": "node tools/build-pages.mjs",
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/app.css --minify",
+    "dev": "tailwindcss -i ./assets/css/main.css -o ./assets/css/app.css --watch",
+    "serve": "npx --yes serve . -l 4173"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}

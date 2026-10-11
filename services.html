@@ -1,0 +1,1394 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services — Managed IT, Cloud, Security & Consulting | Kilstar ICT and Business Consultants</title>
+    <meta name="description" content="Detailed breakdowns of Kilstar's managed IT support, 24/7 help desk, backup & disaster recovery, network infrastructure, cloud, cybersecurity and IT consulting services — with SLAs and transparent per-user pricing." />
+    <meta name="theme-color" content="#0a1430" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <script>
+      // Set before first paint so reveal animations only hide content when JS runs.
+      document.documentElement.classList.add("js");
+      // Safety net: if assets/js/main.js never loads, drop the "js" flag so that
+      // [data-reveal] content is not left permanently invisible.
+      setTimeout(function () {
+        if (!document.documentElement.hasAttribute("data-js-ready")) {
+          document.documentElement.classList.remove("js");
+        }
+      }, 5000);
+    </script>
+
+  </head>
+
+  <body class="bg-white">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-lg focus:bg-navy-900 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
+      >Skip to main content</a
+    >
+
+<!-- ============================== HEADER ============================== -->
+    <header data-header>
+      <div class="container-page flex h-16 items-center justify-between gap-4 lg:h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex shrink-0 items-center gap-2.5" aria-label="Kilstar ICT and Business Consultants — home">
+          <img src="assets/img/logo.svg" alt="" width="40" height="40" class="size-9 lg:size-10" />
+          <span class="flex flex-col leading-none">
+            <span class="text-[0.95rem] font-bold tracking-tight text-navy-900">Kilstar</span>
+            <span class="mt-0.5 text-[0.6rem] font-semibold tracking-[0.22em] text-electric-600 uppercase"
+              >ICT &amp; Business</span
+            >
+          </span>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+          <a href="index.html" class="nav-link" data-nav="home">Home</a>
+
+          <div class="relative" data-dropdown>
+            <button
+              type="button"
+              class="nav-link"
+              data-dropdown-trigger
+              data-nav="services" aria-current="page"
+              aria-expanded="false"
+              aria-controls="nav-services-menu"
+            >
+              Services
+              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </button>
+            <div id="nav-services-menu" data-dropdown-panel class="w-[26rem] p-2.5">
+              <p class="px-3 pt-1.5 pb-1 text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Core services</p>
+              <a href="services.html#managed-services" class="group flex gap-3 rounded-xl p-3 transition-colors hover:bg-navy-50">
+                <span class="icon-tile size-9 rounded-lg">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="3.5" />
+                    <path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-sm font-semibold text-navy-900">Managed IT Support</span>
+                  <span class="mt-0.5 block text-xs text-slate-500">24/7 monitoring, patching &amp; proactive maintenance</span>
+                </span>
+              </a>
+              <a href="services.html#help-desk" class="group flex gap-3 rounded-xl p-3 transition-colors hover:bg-navy-50">
+                <span class="icon-tile size-9 rounded-lg">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H9l-5 4v-4z" />
+                    <path d="M9.5 9.75h5M9.5 12.25h3" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-sm font-semibold text-navy-900">Help Desk &amp; Service Desk</span>
+                  <span class="mt-0.5 block text-xs text-slate-500">Tier 1–3 support with 15-minute response SLA</span>
+                </span>
+              </a>
+              <a href="services.html#cloud" class="group flex gap-3 rounded-xl p-3 transition-colors hover:bg-navy-50">
+                <span class="icon-tile size-9 rounded-lg">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M7 18a4.2 4.2 0 0 1 .7-8.3 5.6 5.6 0 0 1 10.7-1.1A3.9 3.9 0 0 1 18.4 18Z" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-sm font-semibold text-navy-900">Cloud Solutions</span>
+                  <span class="mt-0.5 block text-xs text-slate-500">Azure &amp; AWS migrations, cost optimisation, FinOps</span>
+                </span>
+              </a>
+              <a href="services.html#security" class="group flex gap-3 rounded-xl p-3 transition-colors hover:bg-navy-50">
+                <span class="icon-tile size-9 rounded-lg">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M12 3l7 3v5.5c0 4.2-2.9 7.6-7 8.5-4.1-.9-7-4.3-7-8.5V6l7-3Z" />
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-sm font-semibold text-navy-900">Cybersecurity &amp; Compliance</span>
+                  <span class="mt-0.5 block text-xs text-slate-500">SOC 2, HIPAA &amp; ISO 27001 readiness, MDR</span>
+                </span>
+              </a>
+              <div class="mt-1.5 rounded-xl bg-navy-950 p-3.5">
+                <p class="text-sm font-semibold text-white">Not sure where to start?</p>
+                <p class="mt-0.5 text-xs text-slate-300">Free 30-minute IT health assessment.</p>
+                <button type="button" data-modal-open="audit-modal" class="link-arrow mt-2 text-teal-300">
+                  Book an IT audit
+                  <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <a href="industries.html" class="nav-link" data-nav="industries">Industries</a>
+          <a href="about.html" class="nav-link" data-nav="about">About</a>
+          <a href="resources.html" class="nav-link" data-nav="resources">Resources</a>
+          <a href="contact.html" class="nav-link" data-nav="contact">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <a href="contact.html" class="hidden text-sm font-semibold text-navy-800 hover:text-electric-700 sm:inline lg:hidden xl:inline"
+            >Contact</a
+          >
+          <button type="button" data-modal-open="audit-modal" class="btn-primary btn-sm hidden sm:inline-flex">
+            Book an IT Audit
+          </button>
+          <button
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            class="btn-outline btn-sm -mr-1 size-10 justify-center p-0 lg:hidden"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg data-icon-open class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+            </svg>
+            <svg data-icon-close class="hidden size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile drawer -->
+      <div id="mobile-menu" data-nav-menu hidden class="lg:hidden">
+        <div data-nav-panel class="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-slate-200 bg-white pb-6">
+          <nav class="container-page flex flex-col gap-1 pt-4" aria-label="Mobile">
+            <a href="index.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="home">Home</a>
+
+            <div data-submenu>
+              <button
+                type="button"
+                class="flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-left text-base font-semibold text-navy-900"
+                data-submenu-trigger
+                data-nav="services" aria-current="page"
+                aria-expanded="false"
+                aria-controls="mobile-services"
+              >
+                Services
+                <svg class="size-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div id="mobile-services" data-submenu-panel>
+                <div>
+                  <ul class="mt-1 space-y-0.5 border-l-2 border-slate-200 pl-3">
+                    <li><a href="services.html#managed-services" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Managed IT Support</a></li>
+                    <li><a href="services.html#help-desk" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Help Desk &amp; Service Desk</a></li>
+                    <li><a href="services.html#backup-dr" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Backup &amp; Disaster Recovery</a></li>
+                    <li><a href="services.html#network" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Network Infrastructure</a></li>
+                    <li><a href="services.html#cloud" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Cloud Solutions</a></li>
+                    <li><a href="services.html#security" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Cybersecurity</a></li>
+                    <li><a href="services.html#consulting" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">IT Consulting</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <a href="industries.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="industries">Industries</a>
+            <a href="about.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="about">About</a>
+            <a href="resources.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="resources">Resources</a>
+            <a href="contact.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="contact">Contact</a>
+
+            <button type="button" data-modal-open="audit-modal" class="btn-primary mt-3 w-full">Book an IT Audit</button>
+            <p class="mt-4 px-3 text-xs text-slate-500">
+              24/7 service desk ·
+              <a href="tel:+15550108800" class="font-semibold text-navy-800">+1 (555) 010-8800</a>
+            </p>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+<!-- ============================== PAGE HERO ============================= -->
+<section class="relative overflow-hidden bg-navy-950 text-white">
+  <div class="bg-grid absolute inset-0 opacity-60" aria-hidden="true"></div>
+  <div class="absolute -top-32 right-0 size-[32rem] rounded-full bg-electric-500/16 blur-[110px]" aria-hidden="true"></div>
+
+  <div class="container-page relative py-18 sm:py-20 lg:py-24">
+    <nav aria-label="Breadcrumb" class="mb-7">
+      <ol class="flex flex-wrap items-center gap-2 text-xs text-slate-400">
+        <li><a href="index.html" class="transition-colors hover:text-teal-300">Home</a></li>
+        <li aria-hidden="true">/</li>
+        <li><span class="font-medium text-slate-200" aria-current="page">Services</span></li>
+      </ol>
+    </nav>
+
+    <div class="max-w-3xl">
+      <p class="eyebrow eyebrow-dark">Services</p>
+      <h1 class="h1 mt-5 text-white">Every service your IT estate needs. Nothing you don't.</h1>
+      <p class="mt-6 text-lg leading-relaxed text-slate-300">
+        Pick a single service line or hand us the whole environment. Every engagement is scoped
+        with written SLAs, named engineers, and pricing you can forecast — then reported on monthly.
+      </p>
+      <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+        <button type="button" data-modal-open="audit-modal" class="btn-accent btn-lg">
+          Get a tailored quote
+          <svg class="size-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </button>
+        <a href="#pricing" class="btn-ghost-light btn-lg">See pricing</a>
+      </div>
+    </div>
+
+    <!-- Quick jump links -->
+    <ul class="mt-14 flex flex-wrap gap-2.5">
+      <li><a href="#managed-services" class="badge-dark px-3 py-1.5 transition-colors hover:border-teal-300/40 hover:text-teal-200">Managed IT Support</a></li>
+      <li><a href="#help-desk" class="badge-dark px-3 py-1.5 transition-colors hover:border-teal-300/40 hover:text-teal-200">Help Desk</a></li>
+      <li><a href="#backup-dr" class="badge-dark px-3 py-1.5 transition-colors hover:border-teal-300/40 hover:text-teal-200">Backup &amp; DR</a></li>
+      <li><a href="#network" class="badge-dark px-3 py-1.5 transition-colors hover:border-teal-300/40 hover:text-teal-200">Network Infrastructure</a></li>
+      <li><a href="#cloud" class="badge-dark px-3 py-1.5 transition-colors hover:border-teal-300/40 hover:text-teal-200">Cloud</a></li>
+      <li><a href="#security" class="badge-dark px-3 py-1.5 transition-colors hover:border-teal-300/40 hover:text-teal-200">Cybersecurity</a></li>
+      <li><a href="#consulting" class="badge-dark px-3 py-1.5 transition-colors hover:border-teal-300/40 hover:text-teal-200">Consulting</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== INTERACTIVE SERVICE TABS ====================== -->
+<section class="section bg-slate-50">
+  <div class="container-page">
+    <div class="max-w-2xl" data-reveal>
+      <p class="eyebrow">Service catalogue</p>
+      <h2 class="h2 mt-5">Explore each service in detail</h2>
+      <p class="lede mt-5">
+        Select a service to see what is included, the SLAs you can hold us to, and the tooling
+        we run. Use the arrow keys to move between tabs.
+      </p>
+    </div>
+
+    <div class="mt-14" data-tabs="vertical">
+      <div class="grid gap-8 lg:grid-cols-12 lg:gap-10">
+        <!-- Tab list -->
+        <div class="lg:col-span-5">
+          <div
+            role="tablist"
+            aria-orientation="vertical"
+            aria-label="Service catalogue"
+            class="no-scrollbar -mx-5 flex gap-3 overflow-x-auto px-5 pb-2 lg:mx-0 lg:flex-col lg:gap-2.5 lg:overflow-visible lg:px-0 lg:pb-0"
+          >
+            <button
+              type="button"
+              role="tab"
+              id="tab-managed"
+              data-value="Managed IT Support"
+              aria-controls="managed-services"
+              aria-selected="true"
+              tabindex="0"
+              class="tab-btn w-64 shrink-0 lg:w-auto lg:shrink"
+            >
+              <span class="icon-tile shrink-0">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="3.5" />
+                  <path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21" />
+                </svg>
+              </span>
+              <span class="min-w-0">
+                <span class="block text-sm font-semibold text-navy-900">Managed IT Support</span>
+                <span class="mt-0.5 block text-xs text-slate-500">Proactive, 24/7 care for every endpoint</span>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              role="tab"
+              id="tab-helpdesk"
+              data-value="Help Desk &amp; Service Desk"
+              aria-controls="help-desk"
+              aria-selected="false"
+              tabindex="-1"
+              class="tab-btn w-64 shrink-0 lg:w-auto lg:shrink"
+            >
+              <span class="icon-tile shrink-0">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H9l-5 4v-4z" />
+                  <path d="M9.5 9.75h5M9.5 12.25h3" />
+                </svg>
+              </span>
+              <span class="min-w-0">
+                <span class="block text-sm font-semibold text-navy-900">Help Desk &amp; Service Desk</span>
+                <span class="mt-0.5 block text-xs text-slate-500">Tier 1–3 support, 15-min critical SLA</span>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              role="tab"
+              id="tab-backup"
+              data-value="Data Backup &amp; Disaster Recovery"
+              aria-controls="backup-dr"
+              aria-selected="false"
+              tabindex="-1"
+              class="tab-btn w-64 shrink-0 lg:w-auto lg:shrink"
+            >
+              <span class="icon-tile shrink-0">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <ellipse cx="12" cy="6" rx="7" ry="3" />
+                  <path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3" />
+                </svg>
+              </span>
+              <span class="min-w-0">
+                <span class="block text-sm font-semibold text-navy-900">Backup &amp; Disaster Recovery</span>
+                <span class="mt-0.5 block text-xs text-slate-500">Immutable backups, tested restores</span>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              role="tab"
+              id="tab-network"
+              data-value="Network Infrastructure"
+              aria-controls="network"
+              aria-selected="false"
+              tabindex="-1"
+              class="tab-btn w-64 shrink-0 lg:w-auto lg:shrink"
+            >
+              <span class="icon-tile shrink-0">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <circle cx="12" cy="5" r="2.5" /><circle cx="5" cy="18" r="2.5" /><circle cx="19" cy="18" r="2.5" />
+                  <path d="M10.5 7 6.5 15.5M13.5 7l4 8.5M7.5 18h9" />
+                </svg>
+              </span>
+              <span class="min-w-0">
+                <span class="block text-sm font-semibold text-navy-900">Network Infrastructure</span>
+                <span class="mt-0.5 block text-xs text-slate-500">Design, build, monitor, document</span>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              role="tab"
+              id="tab-cloud"
+              data-value="Cloud Solutions"
+              aria-controls="cloud"
+              aria-selected="false"
+              tabindex="-1"
+              class="tab-btn w-64 shrink-0 lg:w-auto lg:shrink"
+            >
+              <span class="icon-tile shrink-0">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M7 18a4.2 4.2 0 0 1 .7-8.3 5.6 5.6 0 0 1 10.7-1.1A3.9 3.9 0 0 1 18.4 18Z" />
+                </svg>
+              </span>
+              <span class="min-w-0">
+                <span class="block text-sm font-semibold text-navy-900">Cloud Solutions</span>
+                <span class="mt-0.5 block text-xs text-slate-500">Azure &amp; AWS, run cost-effectively</span>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              role="tab"
+              id="tab-security"
+              data-value="Cybersecurity"
+              aria-controls="security"
+              aria-selected="false"
+              tabindex="-1"
+              class="tab-btn w-64 shrink-0 lg:w-auto lg:shrink"
+            >
+              <span class="icon-tile shrink-0">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M12 3l7 3v5.5c0 4.2-2.9 7.6-7 8.5-4.1-.9-7-4.3-7-8.5V6l7-3Z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+              </span>
+              <span class="min-w-0">
+                <span class="block text-sm font-semibold text-navy-900">Cybersecurity</span>
+                <span class="mt-0.5 block text-xs text-slate-500">MDR, testing &amp; compliance readiness</span>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              role="tab"
+              id="tab-consulting"
+              data-value="IT Consulting"
+              aria-controls="consulting"
+              aria-selected="false"
+              tabindex="-1"
+              class="tab-btn w-64 shrink-0 lg:w-auto lg:shrink"
+            >
+              <span class="icon-tile shrink-0">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M15.5 8.5l-2.1 5-5 2.1 2.1-5 5-2.1Z" />
+                </svg>
+              </span>
+              <span class="min-w-0">
+                <span class="block text-sm font-semibold text-navy-900">IT Consulting</span>
+                <span class="mt-0.5 block text-xs text-slate-500">Virtual CIO, roadmaps &amp; budgets</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="card mt-8 hidden p-6 lg:block">
+            <p class="text-sm font-semibold text-navy-900">Not sure which you need?</p>
+            <p class="mt-1.5 text-sm leading-relaxed text-slate-600">
+              Most engagements start with a free audit. We will tell you which of these you
+              actually need — and which you do not.
+            </p>
+            <button type="button" data-modal-open="audit-modal" class="btn-outline btn-sm mt-4 w-full">
+              Book an IT Audit
+            </button>
+          </div>
+        </div>
+
+        <!-- Panels -->
+        <div class="lg:col-span-7">
+          <!-- Managed IT Support -->
+          <div role="tabpanel" id="managed-services" aria-labelledby="tab-managed" tabindex="0">
+            <div class="card p-7 sm:p-8">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="icon-tile icon-tile-lg">
+                  <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="3.5" />
+                    <path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="h2 text-2xl">Managed IT Support</h3>
+                  <p class="text-sm text-slate-500">From $89 / user / month</p>
+                </div>
+              </div>
+
+              <p class="mt-6 text-base leading-relaxed text-slate-600">
+                We become your IT department. Every workstation, laptop, server and cloud workload
+                is monitored around the clock, patched on a schedule, and supported by engineers
+                who already know your environment.
+              </p>
+
+              <div class="mt-8 grid gap-8 sm:grid-cols-2">
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">What's included</h4>
+                  <ul class="check-list mt-4 text-sm">
+                    <li>24/7 monitoring and automated alerting</li>
+                    <li>Monthly patch &amp; OS lifecycle management</li>
+                    <li>Endpoint protection (EDR) deployment &amp; tuning</li>
+                    <li>User onboarding / offboarding automation</li>
+                    <li>Asset inventory &amp; warranty tracking</li>
+                    <li>Printer, scanner &amp; peripheral support</li>
+                    <li>Standardised build and configuration</li>
+                    <li>Monthly service review with your TAM</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Service levels</h4>
+                  <div class="mt-4 overflow-hidden rounded-xl border border-slate-200">
+                    <table class="w-full text-left text-sm">
+                      <caption class="sr-only">Managed IT Support response and resolution targets</caption>
+                      <thead class="bg-slate-50 text-2xs tracking-wide text-slate-500 uppercase">
+                        <tr>
+                          <th scope="col" class="px-4 py-2.5 font-semibold">Priority</th>
+                          <th scope="col" class="px-4 py-2.5 font-semibold">Response</th>
+                          <th scope="col" class="px-4 py-2.5 font-semibold">Resolve</th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-slate-100 text-slate-600">
+                        <tr><th scope="row" class="px-4 py-2.5 font-medium text-navy-900">Critical</th><td class="px-4 py-2.5">15 min</td><td class="px-4 py-2.5">4 hrs</td></tr>
+                        <tr><th scope="row" class="px-4 py-2.5 font-medium text-navy-900">High</th><td class="px-4 py-2.5">1 hour</td><td class="px-4 py-2.5">8 hrs</td></tr>
+                        <tr><th scope="row" class="px-4 py-2.5 font-medium text-navy-900">Normal</th><td class="px-4 py-2.5">4 hours</td><td class="px-4 py-2.5">2 days</td></tr>
+                        <tr><th scope="row" class="px-4 py-2.5 font-medium text-navy-900">Request</th><td class="px-4 py-2.5">1 day</td><td class="px-4 py-2.5">5 days</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="hint mt-3">Missed critical SLAs automatically credit 5% of that month's fee.</p>
+                </div>
+              </div>
+
+              <div class="mt-8 flex flex-col gap-3 border-t border-slate-200 pt-6 sm:flex-row">
+                <a href="contact.html?service=Managed%20IT%20Support#quote" class="btn-primary">
+                  Request Managed IT Support
+                  <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </a>
+                <a href="#pricing" class="btn-outline">Compare plans</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Help Desk -->
+          <div role="tabpanel" id="help-desk" aria-labelledby="tab-helpdesk" tabindex="0" hidden>
+            <div class="card p-7 sm:p-8">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="icon-tile icon-tile-lg">
+                  <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H9l-5 4v-4z" />
+                    <path d="M9.5 9.75h5M9.5 12.25h3" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="h2 text-2xl">Help Desk &amp; Service Desk</h3>
+                  <p class="text-sm text-slate-500">From $45 / ticket pack or $79 / user / month</p>
+                </div>
+              </div>
+
+              <p class="mt-6 text-base leading-relaxed text-slate-600">
+                A full service desk with a single phone number, a portal, and escalations that
+                actually get picked up. Staffed around the clock across three regions, with
+                follow-the-sun handover so nothing waits for a 9am start.
+              </p>
+
+              <div class="mt-8 grid gap-8 sm:grid-cols-2">
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Channels</h4>
+                  <ul class="check-list mt-4 text-sm">
+                    <li>Phone (24/7, 15-sec answer target)</li>
+                    <li>Email &amp; shared mailbox</li>
+                    <li>Self-service portal with knowledge base</li>
+                    <li>Chat widget on your intranet</li>
+                    <li>Automated ticketing from monitoring alerts</li>
+                    <li>Scheduled on-site visits</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Tier model</h4>
+                  <ol class="mt-4 space-y-3 text-sm text-slate-600">
+                    <li class="flex gap-3">
+                      <span class="flex size-6 shrink-0 items-center justify-center rounded-full bg-electric-500/10 text-2xs font-bold text-electric-700">1</span>
+                      <span><strong class="font-semibold text-navy-900">Service desk</strong> — triage, identity, resets, known errors.</span>
+                    </li>
+                    <li class="flex gap-3">
+                      <span class="flex size-6 shrink-0 items-center justify-center rounded-full bg-electric-500/10 text-2xs font-bold text-electric-700">2</span>
+                      <span><strong class="font-semibold text-navy-900">Support engineers</strong> — app, OS and network remediation.</span>
+                    </li>
+                    <li class="flex gap-3">
+                      <span class="flex size-6 shrink-0 items-center justify-center rounded-full bg-electric-500/10 text-2xs font-bold text-electric-700">3</span>
+                      <span><strong class="font-semibold text-navy-900">Senior / vendor</strong> — root cause, third-party escalation.</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="mt-8 flex flex-col gap-3 border-t border-slate-200 pt-6 sm:flex-row">
+                <a href="contact.html?service=Help%20Desk%20%26%20Service%20Desk#quote" class="btn-primary">
+                  Request Help Desk support
+                </a>
+                <a href="#pricing" class="btn-outline">Compare plans</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backup & DR -->
+          <div role="tabpanel" id="backup-dr" aria-labelledby="tab-backup" tabindex="0" hidden>
+            <div class="card p-7 sm:p-8">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="icon-tile icon-tile-lg">
+                  <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <ellipse cx="12" cy="6" rx="7" ry="3" />
+                    <path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="h2 text-2xl">Backup &amp; Disaster Recovery</h3>
+                  <p class="text-sm text-slate-500">From $6 / endpoint / month</p>
+                </div>
+              </div>
+
+              <p class="mt-6 text-base leading-relaxed text-slate-600">
+                Backup is not a checkbox — it is a tested, documented recovery plan. We protect
+                every workload, run immutable copies that ransomware cannot reach, and prove it by
+                restoring on a schedule and handing you the evidence.
+              </p>
+
+              <div class="mt-8 grid gap-8 sm:grid-cols-2">
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Coverage</h4>
+                  <ul class="check-list mt-4 text-sm">
+                    <li>Endpoint &amp; server image backups</li>
+                    <li>Microsoft 365, Google Workspace &amp; SQL</li>
+                    <li>VMware, Hyper-V and NAS/SAN volumes</li>
+                    <li>SaaS &amp; cloud-native workloads</li>
+                    <li>Immutable, air-gapped vault copies</li>
+                    <li>Recovery orchestration for full-site loss</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Objectives</h4>
+                  <ul class="mt-4 space-y-3 text-sm text-slate-600">
+                    <li class="flex items-baseline justify-between gap-4 border-b border-slate-100 pb-2.5">
+                      <span class="text-slate-500">RPO — data loss window</span>
+                      <strong class="font-semibold text-navy-900">15 minutes</strong>
+                    </li>
+                    <li class="flex items-baseline justify-between gap-4 border-b border-slate-100 pb-2.5">
+                      <span class="text-slate-500">RTO — time to restore</span>
+                      <strong class="font-semibold text-navy-900">4 hours</strong>
+                    </li>
+                    <li class="flex items-baseline justify-between gap-4 border-b border-slate-100 pb-2.5">
+                      <span class="text-slate-500">Restore testing</span>
+                      <strong class="font-semibold text-navy-900">Monthly</strong>
+                    </li>
+                    <li class="flex items-baseline justify-between gap-4">
+                      <span class="text-slate-500">Documentation</span>
+                      <strong class="font-semibold text-navy-900">Runbook, tested</strong>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-8 rounded-xl border border-warning-400/30 bg-warning-400/[0.08] p-5">
+                <p class="text-sm font-semibold text-navy-900">Ransomware simulation</p>
+                <p class="mt-1 text-sm text-slate-600">
+                  Annually we run a controlled attack simulation against your environment. It has
+                  caught a 3-of-9 client that had backups but no tested restore path.
+                </p>
+              </div>
+
+              <div class="mt-8 flex flex-col gap-3 border-t border-slate-200 pt-6 sm:flex-row">
+                <a href="contact.html?service=Data%20Backup%20%26%20Disaster%20Recovery#quote" class="btn-primary">
+                  Protect my data
+                </a>
+                <a href="#pricing" class="btn-outline">Compare plans</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Network -->
+          <div role="tabpanel" id="network" aria-labelledby="tab-network" tabindex="0" hidden>
+            <div class="card p-7 sm:p-8">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="icon-tile icon-tile-lg">
+                  <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <circle cx="12" cy="5" r="2.5" /><circle cx="5" cy="18" r="2.5" /><circle cx="19" cy="18" r="2.5" />
+                    <path d="M10.5 7 6.5 15.5M13.5 7l4 8.5M7.5 18h9" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="h2 text-2xl">Network Infrastructure</h3>
+                  <p class="text-sm text-slate-500">Project-based, from $12k</p>
+                </div>
+              </div>
+
+              <p class="mt-6 text-base leading-relaxed text-slate-600">
+                Networks built to be boring: segmented, redundant, monitored and documented. We
+                design, deploy and support everything from structured cabling and switching to
+                SD-WAN, firewall policy and wireless — and hand you diagrams that match reality.
+              </p>
+
+              <div class="mt-8 grid gap-8 sm:grid-cols-2">
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Design &amp; build</h4>
+                  <ul class="check-list mt-4 text-sm">
+                    <li>Site survey &amp; structured cabling</li>
+                    <li>Core, distribution &amp; access switching</li>
+                    <li>Wi-Fi 6E design, survey &amp; deployment</li>
+                    <li>Firewall, VPN &amp; zero-trust segmentation</li>
+                    <li>SD-WAN / SASE for multi-site</li>
+                    <li>Data centre &amp; rack consolidation</li>
+                    <li>IP addressing &amp; DNS architecture</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Operate &amp; document</h4>
+                  <ul class="check-list mt-4 text-sm">
+                    <li>SNMP, syslog &amp; flow monitoring</li>
+                    <li>Configuration backup &amp; change control</li>
+                    <li>Firmware lifecycle &amp; end-of-life tracking</li>
+                    <li>Latency, packet-loss &amp; uptime reporting</li>
+                    <li>Capacity planning as you grow</li>
+                    <li>As-built diagrams &amp; IP schema handover</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-8 flex flex-col gap-3 border-t border-slate-200 pt-6 sm:flex-row">
+                <a href="contact.html?service=Network%20Infrastructure#quote" class="btn-primary">
+                  Plan my network
+                </a>
+                <a href="contact.html" class="btn-outline">Request a site survey</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud -->
+          <div role="tabpanel" id="cloud" aria-labelledby="tab-cloud" tabindex="0" hidden>
+            <div class="card p-7 sm:p-8">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="icon-tile icon-tile-lg">
+                  <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <path d="M7 18a4.2 4.2 0 0 1 .7-8.3 5.6 5.6 0 0 1 10.7-1.1A3.9 3.9 0 0 1 18.4 18Z" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="h2 text-2xl">Cloud Solutions</h3>
+                  <p class="text-sm text-slate-500">Projects from $18k · Managed cloud from 12% of spend</p>
+                </div>
+              </div>
+
+              <p class="mt-6 text-base leading-relaxed text-slate-600">
+                Lift-and-shift gets you to the cloud. It does not make you faster or cheaper. We
+                design a landing zone you can actually operate, migrate with minimal downtime, then
+                keep optimising cost, performance and security continuously.
+              </p>
+
+              <div class="mt-8 grid gap-8 sm:grid-cols-2">
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Azure &amp; AWS services</h4>
+                  <ul class="check-list mt-4 text-sm">
+                    <li>Landing zone &amp; governance design</li>
+                    <li>Migration factory &amp; wave planning</li>
+                    <li>Identity, SSO, MFA &amp; conditional access</li>
+                    <li>Kubernetes &amp; container platforms</li>
+                    <li>Serverless &amp; event-driven architecture</li>
+                    <li>Data platform &amp; analytics readiness</li>
+                    <li>Well-architected reviews</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">FinOps results</h4>
+                  <p class="mt-4 text-sm leading-relaxed text-slate-600">
+                    Typical savings on a right-sized estate:
+                  </p>
+                  <ul class="mt-4 space-y-3 text-sm">
+                    <li class="flex items-baseline justify-between gap-4 border-b border-slate-100 pb-2.5">
+                      <span class="text-slate-500">Over-provisioned compute</span>
+                      <strong class="font-semibold text-navy-900">−30 to 45%</strong>
+                    </li>
+                    <li class="flex items-baseline justify-between gap-4 border-b border-slate-100 pb-2.5">
+                      <span class="text-slate-500">Storage tiering</span>
+                      <strong class="font-semibold text-navy-900">−40%</strong>
+                    </li>
+                    <li class="flex items-baseline justify-between gap-4">
+                      <span class="text-slate-500">Commitment discounts</span>
+                      <strong class="font-semibold text-navy-900">−18%</strong>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-8 flex flex-col gap-3 border-t border-slate-200 pt-6 sm:flex-row">
+                <a href="contact.html?service=Cloud%20Solutions#quote" class="btn-primary">
+                  Talk cloud migration
+                </a>
+                <a href="#pricing" class="btn-outline">Compare plans</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Security -->
+          <div role="tabpanel" id="security" aria-labelledby="tab-security" tabindex="0" hidden>
+            <div class="card p-7 sm:p-8">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="icon-tile icon-tile-lg">
+                  <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <path d="M12 3l7 3v5.5c0 4.2-2.9 7.6-7 8.5-4.1-.9-7-4.3-7-8.5V6l7-3Z" />
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="h2 text-2xl">Cybersecurity &amp; Compliance</h3>
+                  <p class="text-sm text-slate-500">MDR from $6 / endpoint / month · Assessments from $9k</p>
+                </div>
+              </div>
+
+              <p class="mt-6 text-base leading-relaxed text-slate-600">
+                Most breaches start with something unglamorous: an unpatched VPN, an over-shared
+                drive, a contractor account that outlived the project. We close those gaps, keep
+                watching, and give you the evidence trail your customers and auditors expect.
+              </p>
+
+              <div class="mt-8 grid gap-8 sm:grid-cols-2">
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Defence &amp; response</h4>
+                  <ul class="check-list mt-4 text-sm">
+                    <li>24/7 managed detection &amp; response (MDR)</li>
+                    <li>Endpoint detection &amp; response (EDR/XDR)</li>
+                    <li>Email security, anti-phishing &amp; DMARC</li>
+                    <li>Network IDS/IPS and DNS filtering</li>
+                    <li>Zero-trust identity with conditional access</li>
+                    <li>Vulnerability management &amp; penetration testing</li>
+                    <li>Incident response retainer with 1-hour callout</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Compliance programmes</h4>
+                  <ul class="check-list mt-4 text-sm">
+                    <li>SOC 2 Type II readiness &amp; audits</li>
+                    <li>ISO 27001 gap analysis &amp; implementation</li>
+                    <li>HIPAA, PCI DSS &amp; GDPR mapping</li>
+                    <li>Vendor &amp; third-party risk programs</li>
+                    <li>Security awareness training for staff</li>
+                    <li>Policy library &amp; annual evidence packs</li>
+                    <li>Cyber insurance questionnaire support</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-8 grid gap-4 sm:grid-cols-3">
+                <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                  <p class="font-mono text-xl font-bold text-navy-900">11 min</p>
+                  <p class="mt-1 text-xs text-slate-500">Median MDR alert triage time</p>
+                </div>
+                <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                  <p class="font-mono text-xl font-bold text-navy-900">4,100+</p>
+                  <p class="mt-1 text-xs text-slate-500">Critical findings remediated / yr</p>
+                </div>
+                <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                  <p class="font-mono text-xl font-bold text-navy-900">0</p>
+                  <p class="mt-1 text-xs text-slate-500">Client breaches since 2014</p>
+                </div>
+              </div>
+
+              <div class="mt-8 flex flex-col gap-3 border-t border-slate-200 pt-6 sm:flex-row">
+                <a href="contact.html?service=Cybersecurity%20%26%20Compliance#quote" class="btn-primary">
+                  Secure my environment
+                </a>
+                <a href="#pricing" class="btn-outline">Compare plans</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Consulting -->
+          <div role="tabpanel" id="consulting" aria-labelledby="tab-consulting" tabindex="0" hidden>
+            <div class="card p-7 sm:p-8">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="icon-tile icon-tile-lg">
+                  <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M15.5 8.5l-2.1 5-5 2.1 2.1-5 5-2.1Z" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="h2 text-2xl">IT Consulting</h3>
+                  <p class="text-sm text-slate-500">Retainers from $4,500 / month</p>
+                </div>
+              </div>
+
+              <p class="mt-6 text-base leading-relaxed text-slate-600">
+                A part-time CIO, technology strategist and budget owner on your side. We translate
+                business goals into a three-year plan, then defend it — to the board, to your team
+                and to your vendors.
+              </p>
+
+              <div class="mt-8 grid gap-8 sm:grid-cols-2">
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Advisory</h4>
+                  <ul class="check-list mt-4 text-sm">
+                    <li>Technology &amp; security roadmap</li>
+                    <li>Budget modelling &amp; capex/opex planning</li>
+                    <li>Vendor selection, negotiation &amp; contract review</li>
+                    <li>Build vs. buy &amp; make-vs-buy analysis</li>
+                    <li>Acquisition technical due diligence</li>
+                    <li>Board &amp; investor technology reporting</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Outcomes</h4>
+                  <div class="mt-4 space-y-3 text-sm text-slate-600">
+                    <div class="rounded-xl border border-slate-200 p-4">
+                      <p class="font-semibold text-navy-900">Cut 22% of IT spend</p>
+                      <p class="mt-1 text-xs">Mid-market manufacturer, 14 months.</p>
+                    </div>
+                    <div class="rounded-xl border border-slate-200 p-4">
+                      <p class="font-semibold text-navy-900">Passed SOC 2 first attempt</p>
+                      <p class="mt-1 text-xs">Fintech, 140 staff, 5-month readiness.</p>
+                    </div>
+                    <div class="rounded-xl border border-slate-200 p-4">
+                      <p class="font-semibold text-navy-900">3-year platform plan adopted</p>
+                      <p class="mt-1 text-xs">Healthcare group, board-approved.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 flex flex-col gap-3 border-t border-slate-200 pt-6 sm:flex-row">
+                <a href="contact.html?service=IT%20Consulting#quote" class="btn-primary">
+                  Meet your virtual CIO
+                </a>
+                <a href="about.html" class="btn-outline">How we work</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PRICING ============================== -->
+<section id="pricing" class="section bg-white">
+  <div class="container-page">
+    <div class="mx-auto max-w-2xl text-center" data-reveal>
+      <p class="eyebrow">Transparent pricing</p>
+      <h2 class="h2 mt-5">Three plans, one price per user</h2>
+      <p class="lede mt-5">
+        Flat per-user pricing with hardware, software and cloud licences at cost plus a disclosed
+        margin. No hourly billing, no surprise change orders.
+      </p>
+    </div>
+
+    <div class="mt-14 grid gap-6 lg:grid-cols-3">
+      <!-- Essential -->
+      <article class="card flex flex-col p-7" data-reveal>
+        <h3 class="h3">Essential</h3>
+        <p class="mt-1.5 text-sm text-slate-600">For 10–75 users who need reliable day-to-day IT.</p>
+        <p class="mt-6 flex items-baseline gap-2">
+          <span class="text-4xl font-bold tracking-tight text-navy-900">$89</span>
+          <span class="text-sm text-slate-500">/ user / month</span>
+        </p>
+        <p class="mt-1 text-xs text-slate-400">Billed annually · 12-month minimum</p>
+        <ul class="check-list mt-7 flex-1 text-sm">
+          <li>8×5 help desk, 4-hour response</li>
+          <li>Monitoring &amp; endpoint protection</li>
+          <li>Monthly patching &amp; asset inventory</li>
+          <li>Backup for laptops and desktops</li>
+          <li>Microsoft 365 or Google Workspace</li>
+          <li>Quarterly business review</li>
+        </ul>
+        <a href="contact.html?service=Managed%20IT%20Support#quote" class="btn-outline mt-7 btn-block">Start with Essential</a>
+      </article>
+
+      <!-- Professional (featured) -->
+      <article class="relative flex flex-col rounded-2xl border-2 border-electric-500 bg-white p-7 shadow-card-lg lg:-translate-y-4" data-reveal data-reveal-delay="80">
+        <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-electric-600 px-3.5 py-1 text-2xs font-semibold tracking-wide text-white uppercase">
+          Most popular
+        </span>
+        <h3 class="h3">Professional</h3>
+        <p class="mt-1.5 text-sm text-slate-600">For 25–300 users with compliance or uptime needs.</p>
+        <p class="mt-6 flex items-baseline gap-2">
+          <span class="text-4xl font-bold tracking-tight text-navy-900">$139</span>
+          <span class="text-sm text-slate-500">/ user / month</span>
+        </p>
+        <p class="mt-1 text-xs text-slate-400">Billed annually · 12-month minimum</p>
+        <ul class="check-list mt-7 flex-1 text-sm">
+          <li><strong class="font-semibold text-navy-900">Everything in Essential</strong></li>
+          <li>24/7 help desk, 15-min critical SLA</li>
+          <li>Server &amp; network monitoring</li>
+          <li>Immutable backup &amp; tested restores</li>
+          <li>Managed detection &amp; response</li>
+          <li>Named technical account manager</li>
+          <li>Monthly reviews + vCIO advisory hours</li>
+        </ul>
+        <button type="button" data-modal-open="audit-modal" class="btn-primary mt-7 btn-block">Get a tailored quote</button>
+      </article>
+
+      <!-- Enterprise -->
+      <article class="card flex flex-col p-7" data-reveal data-reveal-delay="160">
+        <h3 class="h3">Enterprise</h3>
+        <p class="mt-1.5 text-sm text-slate-600">For 300+ users, multi-site and regulated estates.</p>
+        <p class="mt-6 flex items-baseline gap-2">
+          <span class="text-4xl font-bold tracking-tight text-navy-900">Custom</span>
+        </p>
+        <p class="mt-1 text-xs text-slate-400">Volume pricing · 24-month term</p>
+        <ul class="check-list mt-7 flex-1 text-sm">
+          <li><strong class="font-semibold text-navy-900">Everything in Professional</strong></li>
+          <li>Dedicated technical account team</li>
+          <li>On-site engineers for critical sites</li>
+          <li>Private cloud &amp; hybrid architecture</li>
+          <li>SOC 2 / ISO 27001 programme delivery</li>
+          <li>1-hour incident response retainer</li>
+          <li>Custom SLA credits &amp; reporting</li>
+        </ul>
+        <a href="contact.html?service=IT%20Consulting#quote" class="btn-outline mt-7 btn-block">Contact enterprise sales</a>
+      </article>
+    </div>
+
+    <div class="card mt-10 flex flex-col gap-5 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-7" data-reveal>
+      <div class="flex items-start gap-4">
+        <span class="icon-tile shrink-0">
+          <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+            <path d="M12 3.5v17M17.5 7.5c0-1.9-2.2-3-5.5-3s-5.5 1.1-5.5 3 1.9 2.6 5.5 3.4 5.5 1.6 5.5 3.6-2.2 3.4-5.5 3.4-5.5-1.1-5.5-3" />
+          </svg>
+        </span>
+        <div>
+          <p class="text-base font-semibold text-navy-900">One-off projects and audits are quoted separately</p>
+          <p class="mt-1 text-sm text-slate-600">
+            Fixed-price, scoped deliverables. Example: a 120-seat network refresh is quoted at
+            $18,400 including cabling, hardware, configuration and handover documentation.
+          </p>
+        </div>
+      </div>
+      <a href="contact.html" class="btn-dark shrink-0">Request a project quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FAQ / ACCORDION ====================== -->
+<section id="faq" class="section bg-slate-50">
+  <div class="container-page">
+    <div class="grid gap-12 lg:grid-cols-12 lg:gap-16">
+      <div class="lg:col-span-4" data-reveal>
+        <p class="eyebrow">Questions</p>
+        <h2 class="h2 mt-5">Answers before you ask</h2>
+        <p class="mt-5 leading-relaxed text-slate-600">
+          The things procurement, IT leadership and finance all want clarified up front. If yours
+          is not here, ask us directly.
+        </p>
+        <button type="button" data-modal-open="audit-modal" class="btn-primary mt-8">Ask us something</button>
+      </div>
+
+      <div class="lg:col-span-8" data-reveal data-reveal-delay="80">
+        <div data-accordion="single" class="card divide-y divide-slate-200 px-6 sm:px-7">
+          <div>
+            <h3>
+              <button type="button" data-acc-trigger aria-expanded="true" aria-controls="faq-1" class="acc-trigger">
+                What happens in the first 30 days?
+                <span class="acc-icon" aria-hidden="true">
+                  <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" d="M12 5v14M5 12h14" />
+                  </svg>
+                </span>
+              </button>
+            </h3>
+            <div id="faq-1" data-open="true" class="acc-panel">
+              <div>
+                <p class="pb-6 text-sm leading-relaxed text-slate-600">
+                  We complete a full environment inventory, install monitoring, and close every
+                  critical and high-severity finding. Your team gets a named technical account
+                  manager, a documented runbook, and a live service dashboard from day one.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>
+              <button type="button" data-acc-trigger aria-expanded="false" aria-controls="faq-2" class="acc-trigger">
+                Is there a contract lock-in?
+                <span class="acc-icon" aria-hidden="true">
+                  <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" d="M12 5v14M5 12h14" />
+                  </svg>
+                </span>
+              </button>
+            </h3>
+            <div id="faq-2" data-open="false" class="acc-panel">
+              <div>
+                <p class="pb-6 text-sm leading-relaxed text-slate-600">
+                  Standard agreements run 12 months, then convert to rolling 30-day notice. All
+                  your data, documentation and credentials are returned in a standard format — we
+                  never hold an environment hostage. Enterprise terms can be negotiated.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>
+              <button type="button" data-acc-trigger aria-expanded="false" aria-controls="faq-3" class="acc-trigger">
+                Do you work with our existing IT team or MSP?
+                <span class="acc-icon" aria-hidden="true">
+                  <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" d="M12 5v14M5 12h14" />
+                  </svg>
+                </span>
+              </button>
+            </h3>
+            <div id="faq-3" data-open="false" class="acc-panel">
+              <div>
+                <p class="pb-6 text-sm leading-relaxed text-slate-600">
+                  Yes — roughly 60% of clients have internal IT staff. We typically take the
+                  24/7 operational load, monitoring and tooling ownership, and support your team as
+                  the escalation tier. Co-managed arrangements are priced accordingly.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>
+              <button type="button" data-acc-trigger aria-expanded="false" aria-controls="faq-4" class="acc-trigger">
+                How are hardware and software licences handled?
+                <span class="acc-icon" aria-hidden="true">
+                  <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" d="M12 5v14M5 12h14" />
+                  </svg>
+                </span>
+              </button>
+            </h3>
+            <div id="faq-4" data-open="false" class="acc-panel">
+              <div>
+                <p class="pb-6 text-sm leading-relaxed text-slate-600">
+                  Either directly, or passed through your existing reseller. Where we procure, we
+                  charge cost plus a disclosed margin (typically 8–12%) rather than a hidden fee.
+                  You own the licences and assets from day one — they are registered to you, not us.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>
+              <button type="button" data-acc-trigger aria-expanded="false" aria-controls="faq-5" class="acc-trigger">
+                Which certifications and frameworks do you support?
+                <span class="acc-icon" aria-hidden="true">
+                  <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" d="M12 5v14M5 12h14" />
+                  </svg>
+                </span>
+              </button>
+            </h3>
+            <div id="faq-5" data-open="false" class="acc-panel">
+              <div>
+                <p class="pb-6 text-sm leading-relaxed text-slate-600">
+                  SOC 2 Type II, ISO 27001, HIPAA, PCI DSS and GDPR. Our engineers hold Microsoft
+                  Solutions Associate, AWS Solutions Architect, Cisco CCNA/CCNP, CompTIA Security+,
+                  and (ISC)² CCSP certifications. Kilstar itself maintains SOC 2 Type II and
+                  ISO 27001 certification.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>
+              <button type="button" data-acc-trigger aria-expanded="false" aria-controls="faq-6" class="acc-trigger">
+                What if we already have a breach or an outage?
+                <span class="acc-icon" aria-hidden="true">
+                  <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" d="M12 5v14M5 12h14" />
+                  </svg>
+                </span>
+              </button>
+            </h3>
+            <div id="faq-6" data-open="false" class="acc-panel">
+              <div>
+                <p class="pb-6 text-sm leading-relaxed text-slate-600">
+                  We run an emergency stabilisation engagement: contain, eradicate, restore, then
+                  document. Forensics and notification work is scoped separately and can be brought
+                  in under a 4-hour response retainer. We have handled 37 incidents for clients
+                  without a single missed regulatory notification deadline.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== CTA BAND ============================ -->
+<section class="relative overflow-hidden bg-navy-950 py-20 text-white sm:py-24">
+  <div class="bg-grid absolute inset-0 opacity-50" aria-hidden="true"></div>
+  <div class="absolute -bottom-40 left-1/3 size-[30rem] rounded-full bg-teal-400/14 blur-[110px]" aria-hidden="true"></div>
+
+  <div class="container-page relative">
+    <div class="mx-auto max-w-2xl text-center" data-reveal>
+      <h2 class="h2 text-white">Not sure which service you need?</h2>
+      <p class="mt-5 text-lg leading-relaxed text-slate-300">
+        That is a normal place to start. Book a free 30-minute audit and we will tell you
+        plainly — including when the answer is “you don't need us yet”.
+      </p>
+      <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+        <button type="button" data-modal-open="audit-modal" class="btn-accent btn-lg">Schedule Consultation</button>
+        <a href="contact.html" class="btn-ghost-light btn-lg">Contact the team</a>
+      </div>
+      <p class="mt-7 text-sm text-slate-400">
+        Or call the 24/7 service desk at
+        <a href="tel:+15550108800" class="font-semibold text-teal-300 hover:underline">+1 (555) 010-8800</a>
+      </p>
+    </div>
+  </div>
+</section>
+    </main>
+
+<!-- ============================== FOOTER ============================== -->
+    <footer class="bg-navy-950 text-slate-300">
+      <div class="container-page py-16">
+        <div class="grid gap-12 lg:grid-cols-12">
+          <div class="lg:col-span-4">
+            <a href="index.html" class="flex items-center gap-2.5" aria-label="Kilstar ICT and Business Consultants — home">
+              <img src="assets/img/logo.svg" alt="" width="40" height="40" class="size-10" />
+              <span class="flex flex-col leading-none">
+                <span class="text-[0.95rem] font-bold tracking-tight text-white">Kilstar</span>
+                <span class="mt-0.5 text-[0.6rem] font-semibold tracking-[0.22em] text-teal-300 uppercase">ICT &amp; Business</span>
+              </span>
+            </a>
+            <p class="mt-5 max-w-sm text-sm leading-relaxed text-slate-400">
+              Enterprise-grade IT and cybersecurity services for growing businesses. Since 2014 we
+              have helped 400+ organisations run on secure, scalable, well-managed technology.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <a href="https://www.linkedin.com/company/kilstar-ict-consultants" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-white/10 text-slate-400 transition-colors hover:border-teal-300/40 hover:text-teal-300" aria-label="Kilstar ICT and Business Consultants on LinkedIn (opens in a new tab)">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21h-4V9Z" /></svg>
+              </a>
+              <a href="https://x.com/kilstarict" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-white/10 text-slate-400 transition-colors hover:border-teal-300/40 hover:text-teal-300" aria-label="Kilstar ICT and Business Consultants on X (opens in a new tab)">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 3h3.1l-6.8 7.8L21.8 21h-6.2l-4.9-6.4L5.1 21H2l7.3-8.3L2.2 3h6.4l4.4 5.8L17.5 3Zm-1.1 16.1h1.7L7.7 4.8H5.9l10.5 14.3Z" /></svg>
+              </a>
+              <a href="https://www.facebook.com/kilstarict" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-white/10 text-slate-400 transition-colors hover:border-teal-300/40 hover:text-teal-300" aria-label="Kilstar ICT and Business Consultants on Facebook (opens in a new tab)">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z" /></svg>
+              </a>
+              <a href="https://www.youtube.com/@kilstarict" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-white/10 text-slate-400 transition-colors hover:border-teal-300/40 hover:text-teal-300" aria-label="Kilstar ICT and Business Consultants on YouTube (opens in a new tab)">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2c-.23-.87-.9-1.54-1.77-1.77C18.23 5 12 5 12 5s-6.23 0-7.83.43A2.42 2.42 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8c.23.87.9 1.54 1.77 1.77C5.77 19 12 19 12 19s6.23 0 7.83-.43a2.42 2.42 0 0 0 1.77-1.77c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15.1V8.9l5.2 3.1-5.2 3.1Z" /></svg>
+              </a>
+              <a href="https://github.com/kilstar-ict-consultants" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-white/10 text-slate-400 transition-colors hover:border-teal-300/40 hover:text-teal-300" aria-label="Kilstar ICT and Business Consultants on GitHub (opens in a new tab)">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <nav class="lg:col-span-2" aria-label="Footer — services">
+            <h2 class="text-2xs font-semibold tracking-[0.18em] text-white uppercase">Services</h2>
+            <ul class="mt-5 space-y-3 text-sm">
+              <li><a href="services.html#managed-services" class="text-slate-400 transition-colors hover:text-teal-300">Managed IT Support</a></li>
+              <li><a href="services.html#help-desk" class="text-slate-400 transition-colors hover:text-teal-300">Help Desk</a></li>
+              <li><a href="services.html#cloud" class="text-slate-400 transition-colors hover:text-teal-300">Cloud Solutions</a></li>
+              <li><a href="services.html#security" class="text-slate-400 transition-colors hover:text-teal-300">Cybersecurity</a></li>
+              <li><a href="services.html#backup-dr" class="text-slate-400 transition-colors hover:text-teal-300">Backup &amp; DR</a></li>
+              <li><a href="services.html#consulting" class="text-slate-400 transition-colors hover:text-teal-300">IT Consulting</a></li>
+            </ul>
+          </nav>
+
+          <nav class="lg:col-span-2" aria-label="Footer — company">
+            <h2 class="text-2xs font-semibold tracking-[0.18em] text-white uppercase">Company</h2>
+            <ul class="mt-5 space-y-3 text-sm">
+              <li><a href="about.html" class="text-slate-400 transition-colors hover:text-teal-300">About Us</a></li>
+              <li><a href="industries.html" class="text-slate-400 transition-colors hover:text-teal-300">Industries</a></li>
+              <li><a href="resources.html" class="text-slate-400 transition-colors hover:text-teal-300">Resources</a></li>
+              <li><a href="contact.html" class="text-slate-400 transition-colors hover:text-teal-300">Contact</a></li>
+              <li><a href="resources.html#faq" class="text-slate-400 transition-colors hover:text-teal-300">FAQ</a></li>
+              <li><a href="about.html#careers" class="text-slate-400 transition-colors hover:text-teal-300">Careers</a></li>
+            </ul>
+          </nav>
+
+          <div class="lg:col-span-4">
+            <h2 class="text-2xs font-semibold tracking-[0.18em] text-white uppercase">Head office</h2>
+            <address class="mt-5 space-y-3 text-sm not-italic text-slate-400">
+              <p class="flex gap-3">
+                <svg class="mt-0.5 size-4 shrink-0 text-teal-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M20 10.5c0 5.2-8 12-8 12s-8-6.8-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10.5" r="2.8" />
+                </svg>
+                <span>4200 Meridian Parkway, Suite 900<br />Austin, TX 78759, United States</span>
+              </p>
+              <p class="flex gap-3">
+                <svg class="mt-0.5 size-4 shrink-0 text-teal-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M6.5 3.5 3 5.8v15.2l3.5-2.3 11 2.3 3.5-2.3V3.5L17.5 5.8l-11-2.3Z" />
+                </svg>
+                <span>+1 (555) 010-8800 · 24/7 service desk</span>
+              </p>
+              <p class="flex gap-3">
+                <svg class="mt-0.5 size-4 shrink-0 text-teal-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3.5 6.5 8.5 6 8.5-6" />
+                </svg>
+                <a href="mailto:hello@kilstar.example" class="transition-colors hover:text-teal-300">hello@kilstar.example</a>
+              </p>
+            </address>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="badge-dark">SOC 2 Type II</span>
+              <span class="badge-dark">ISO 27001</span>
+              <span class="badge-dark">HIPAA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; <span data-year>2026</span> Kilstar ICT and Business Consultants All rights reserved.</p>
+          <ul class="flex flex-wrap gap-x-6 gap-y-2">
+            <li><a href="legal.html#privacy" class="transition-colors hover:text-teal-300">Privacy Policy</a></li>
+            <li><a href="legal.html#terms" class="transition-colors hover:text-teal-300">Terms of Service</a></li>
+            <li><a href="legal.html#sla" class="transition-colors hover:text-teal-300">SLA Terms</a></li>
+            <li><a href="contact.html" class="transition-colors hover:text-teal-300">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+<div
+      id="audit-modal"
+      data-modal
+      hidden
+      class="fixed inset-0 z-[90] flex items-end justify-center overflow-y-auto bg-navy-975/70 p-0 backdrop-blur-sm sm:items-center sm:p-6"
+    >
+      <div
+        data-modal-panel
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="audit-modal-title"
+        class="relative w-full max-w-2xl rounded-t-3xl bg-white shadow-card-lg sm:rounded-3xl"
+      >
+        <button
+          type="button"
+          data-modal-close
+          class="absolute top-4 right-4 z-10 flex size-9 items-center justify-center rounded-full text-slate-400 transition-colors hover:bg-slate-100 hover:text-navy-900"
+        >
+          <span class="sr-only">Close dialog</span>
+          <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Header band -->
+        <div class="relative overflow-hidden rounded-t-3xl bg-navy-950 px-6 py-7 sm:px-8">
+          <div class="bg-grid absolute inset-0 opacity-60" aria-hidden="true"></div>
+          <div class="absolute -top-16 -right-10 size-56 rounded-full bg-electric-500/25 blur-3xl" aria-hidden="true"></div>
+          <div class="relative">
+            <p class="eyebrow eyebrow-dark">Free · 30 minutes</p>
+            <h2 id="audit-modal-title" class="h2 mt-3 text-white">Book an IT Audit</h2>
+            <p class="mt-2 text-sm text-slate-300">
+              A solutions engineer reviews your environment and sends back a written summary —
+              even if you decide not to work with us.
+            </p>
+          </div>
+        </div>
+
+        <div class="max-h-[70dvh] overflow-y-auto px-6 py-6 sm:px-8 sm:py-7">
+          <p data-form-summary role="alert" hidden class="mb-5 rounded-xl border border-danger-500/30 bg-danger-500/[0.07] px-4 py-3 text-sm font-medium text-danger-600"></p>
+
+          <form data-validate novalidate class="grid gap-5 sm:grid-cols-2">
+            <div>
+              <label class="label" for="m-name">Full name <span class="text-danger-600">*</span></label>
+              <input class="input" type="text" id="m-name" name="name" autocomplete="name" required minlength="2" placeholder="Jane Cooper" />
+            </div>
+            <div>
+              <label class="label" for="m-email">Work email <span class="text-danger-600">*</span></label>
+              <input class="input" type="email" id="m-email" name="email" autocomplete="email" required placeholder="jane@company.com" />
+            </div>
+            <div>
+              <label class="label" for="m-company">Company <span class="text-danger-600">*</span></label>
+              <input class="input" type="text" id="m-company" name="company" autocomplete="organization" required placeholder="Company name" />
+            </div>
+            <div>
+              <label class="label" for="m-users">Team size</label>
+              <select class="select" id="m-users" name="users">
+                <option value="">Select…</option>
+                <option>1–25 employees</option>
+                <option>26–100 employees</option>
+                <option>101–500 employees</option>
+                <option>500+ employees</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="label" for="m-service">Service needed <span class="text-danger-600">*</span></label>
+              <select class="select" id="m-service" name="service" required>
+                <option value="">Choose a service…</option>
+                <option>Managed IT Support</option>
+                <option>Help Desk &amp; Service Desk</option>
+                <option>Cloud Solutions</option>
+                <option>Cybersecurity &amp; Compliance</option>
+                <option>IT Consulting</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="label" for="m-message">What should we know? <span class="text-danger-600">*</span></label>
+              <textarea class="textarea" id="m-message" name="message" required minlength="20" placeholder="e.g. 180 users across 3 offices, currently on on-prem Exchange, need HIPAA readiness by Q3."></textarea>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="flex cursor-pointer items-start gap-3 text-sm text-slate-600">
+                <input type="checkbox" name="consent" required class="mt-0.5 size-4 shrink-0 rounded border-slate-300 text-electric-600 focus:ring-2 focus:ring-electric-500/30" />
+                <span>I agree to be contacted about this request. <span class="text-danger-600">*</span></span>
+              </label>
+            </div>
+            <div class="sm:col-span-2">
+              <button type="submit" class="btn-primary btn-lg btn-block">
+                Book my audit
+                <svg class="size-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </button>
+              <p data-form-status role="status" aria-live="polite" class="mt-3 text-center text-sm font-medium text-slate-600"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

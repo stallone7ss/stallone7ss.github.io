@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Legal — Privacy Policy, Terms of Service & SLA | Kilstar ICT and Business Consultants</title>
+    <meta name="description" content="Kilstar ICT and Business Consultants legal documents: privacy policy, terms of service and the service level agreement that underpins every managed IT engagement." />
+    <meta name="theme-color" content="#0a1430" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <script>
+      // Set before first paint so reveal animations only hide content when JS runs.
+      document.documentElement.classList.add("js");
+      // Safety net: if assets/js/main.js never loads, drop the "js" flag so that
+      // [data-reveal] content is not left permanently invisible.
+      setTimeout(function () {
+        if (!document.documentElement.hasAttribute("data-js-ready")) {
+          document.documentElement.classList.remove("js");
+        }
+      }, 5000);
+    </script>
+
+  </head>
+
+  <body class="bg-white">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-lg focus:bg-navy-900 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
+      >Skip to main content</a
+    >
+
+<!-- ============================== HEADER ============================== -->
+    <header data-header>
+      <div class="container-page flex h-16 items-center justify-between gap-4 lg:h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex shrink-0 items-center gap-2.5" aria-label="Kilstar ICT and Business Consultants — home">
+          <img src="assets/img/logo.svg" alt="" width="40" height="40" class="size-9 lg:size-10" />
+          <span class="flex flex-col leading-none">
+            <span class="text-[0.95rem] font-bold tracking-tight text-navy-900">Kilstar</span>
+            <span class="mt-0.5 text-[0.6rem] font-semibold tracking-[0.22em] text-electric-600 uppercase"
+              >ICT &amp; Business</span
+            >
+          </span>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+          <a href="index.html" class="nav-link" data-nav="home">Home</a>
+
+          <div class="relative" data-dropdown>
+            <button
+              type="button"
+              class="nav-link"
+              data-dropdown-trigger
+              data-nav="services"
+              aria-expanded="false"
+              aria-controls="nav-services-menu"
+            >
+              Services
+              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </button>
+            <div id="nav-services-menu" data-dropdown-panel class="w-[26rem] p-2.5">
+              <p class="px-3 pt-1.5 pb-1 text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">Core services</p>
+              <a href="services.html#managed-services" class="group flex gap-3 rounded-xl p-3 transition-colors hover:bg-navy-50">
+                <span class="icon-tile size-9 rounded-lg">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="3.5" />
+                    <path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-sm font-semibold text-navy-900">Managed IT Support</span>
+                  <span class="mt-0.5 block text-xs text-slate-500">24/7 monitoring, patching &amp; proactive maintenance</span>
+                </span>
+              </a>
+              <a href="services.html#help-desk" class="group flex gap-3 rounded-xl p-3 transition-colors hover:bg-navy-50">
+                <span class="icon-tile size-9 rounded-lg">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H9l-5 4v-4z" />
+                    <path d="M9.5 9.75h5M9.5 12.25h3" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-sm font-semibold text-navy-900">Help Desk &amp; Service Desk</span>
+                  <span class="mt-0.5 block text-xs text-slate-500">Tier 1–3 support with 15-minute response SLA</span>
+                </span>
+              </a>
+              <a href="services.html#cloud" class="group flex gap-3 rounded-xl p-3 transition-colors hover:bg-navy-50">
+                <span class="icon-tile size-9 rounded-lg">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M7 18a4.2 4.2 0 0 1 .7-8.3 5.6 5.6 0 0 1 10.7-1.1A3.9 3.9 0 0 1 18.4 18Z" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-sm font-semibold text-navy-900">Cloud Solutions</span>
+                  <span class="mt-0.5 block text-xs text-slate-500">Azure &amp; AWS migrations, cost optimisation, FinOps</span>
+                </span>
+              </a>
+              <a href="services.html#security" class="group flex gap-3 rounded-xl p-3 transition-colors hover:bg-navy-50">
+                <span class="icon-tile size-9 rounded-lg">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M12 3l7 3v5.5c0 4.2-2.9 7.6-7 8.5-4.1-.9-7-4.3-7-8.5V6l7-3Z" />
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-sm font-semibold text-navy-900">Cybersecurity &amp; Compliance</span>
+                  <span class="mt-0.5 block text-xs text-slate-500">SOC 2, HIPAA &amp; ISO 27001 readiness, MDR</span>
+                </span>
+              </a>
+              <div class="mt-1.5 rounded-xl bg-navy-950 p-3.5">
+                <p class="text-sm font-semibold text-white">Not sure where to start?</p>
+                <p class="mt-0.5 text-xs text-slate-300">Free 30-minute IT health assessment.</p>
+                <button type="button" data-modal-open="audit-modal" class="link-arrow mt-2 text-teal-300">
+                  Book an IT audit
+                  <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <a href="industries.html" class="nav-link" data-nav="industries">Industries</a>
+          <a href="about.html" class="nav-link" data-nav="about">About</a>
+          <a href="resources.html" class="nav-link" data-nav="resources">Resources</a>
+          <a href="contact.html" class="nav-link" data-nav="contact">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <a href="contact.html" class="hidden text-sm font-semibold text-navy-800 hover:text-electric-700 sm:inline lg:hidden xl:inline"
+            >Contact</a
+          >
+          <button type="button" data-modal-open="audit-modal" class="btn-primary btn-sm hidden sm:inline-flex">
+            Book an IT Audit
+          </button>
+          <button
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            class="btn-outline btn-sm -mr-1 size-10 justify-center p-0 lg:hidden"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg data-icon-open class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+            </svg>
+            <svg data-icon-close class="hidden size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile drawer -->
+      <div id="mobile-menu" data-nav-menu hidden class="lg:hidden">
+        <div data-nav-panel class="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-slate-200 bg-white pb-6">
+          <nav class="container-page flex flex-col gap-1 pt-4" aria-label="Mobile">
+            <a href="index.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="home">Home</a>
+
+            <div data-submenu>
+              <button
+                type="button"
+                class="flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-left text-base font-semibold text-navy-900"
+                data-submenu-trigger
+                data-nav="services"
+                aria-expanded="false"
+                aria-controls="mobile-services"
+              >
+                Services
+                <svg class="size-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div id="mobile-services" data-submenu-panel>
+                <div>
+                  <ul class="mt-1 space-y-0.5 border-l-2 border-slate-200 pl-3">
+                    <li><a href="services.html#managed-services" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Managed IT Support</a></li>
+                    <li><a href="services.html#help-desk" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Help Desk &amp; Service Desk</a></li>
+                    <li><a href="services.html#backup-dr" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Backup &amp; Disaster Recovery</a></li>
+                    <li><a href="services.html#network" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Network Infrastructure</a></li>
+                    <li><a href="services.html#cloud" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Cloud Solutions</a></li>
+                    <li><a href="services.html#security" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Cybersecurity</a></li>
+                    <li><a href="services.html#consulting" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">IT Consulting</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <a href="industries.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="industries">Industries</a>
+            <a href="about.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="about">About</a>
+            <a href="resources.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="resources">Resources</a>
+            <a href="contact.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="contact">Contact</a>
+
+            <button type="button" data-modal-open="audit-modal" class="btn-primary mt-3 w-full">Book an IT Audit</button>
+            <p class="mt-4 px-3 text-xs text-slate-500">
+              24/7 service desk ·
+              <a href="tel:+15550108800" class="font-semibold text-navy-800">+1 (555) 010-8800</a>
+            </p>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+<!-- ============================== PAGE HERO ============================= -->
+<section class="relative overflow-hidden bg-navy-950 text-white">
+  <div class="bg-grid absolute inset-0 opacity-60" aria-hidden="true"></div>
+  <div class="absolute -top-28 right-1/4 size-[26rem] rounded-full bg-teal-400/12 blur-[110px]" aria-hidden="true"></div>
+
+  <div class="container-page relative py-18 sm:py-20">
+    <div class="max-w-3xl">
+      <p class="eyebrow eyebrow-dark">Legal</p>
+      <h1 class="h1 mt-5 text-white">Policies &amp; terms</h1>
+      <p class="mt-6 text-lg leading-relaxed text-slate-300">
+        Last updated 1 September 2026. These are summary pages for the live documents — the
+        signed Master Service Agreement always prevails over anything on this site.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PRIVACY =============================== -->
+<section id="privacy" class="section bg-white">
+  <div class="container-page">
+    <div class="grid gap-12 lg:grid-cols-12 lg:gap-16">
+      <div class="lg:col-span-4">
+        <div class="lg:sticky lg:top-28">
+          <h2 class="h2 text-2xl">Privacy Policy</h2>
+          <nav aria-label="On this page" class="mt-6 border-l-2 border-slate-200 pl-4">
+            <ul class="space-y-2.5 text-sm">
+              <li><a href="#privacy" class="font-medium text-navy-900">Privacy Policy</a></li>
+              <li><a href="#terms" class="text-slate-600 transition-colors hover:text-navy-900">Terms of Service</a></li>
+              <li><a href="#sla" class="text-slate-600 transition-colors hover:text-navy-900">SLA Terms</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="lg:col-span-8">
+        <div class="prose-copy space-y-6 text-[0.95rem]">
+          <p>
+            Kilstar ICT and Business Consultants ("Kilstar", "we") collects the minimum personal information
+            required to respond to enquiries, deliver managed IT services, and meet our contractual
+            and legal obligations. We do not sell personal data and we do not share it with third
+            parties for their own marketing.
+          </p>
+
+          <h3 class="h3">Information we collect</h3>
+          <ul class="check-list text-[0.95rem]">
+            <li><strong class="font-semibold text-navy-900">Enquiry data</strong> — name, work email, company, phone and the message you send us through any form on this site.</li>
+            <li><strong class="font-semibold text-navy-900">Newsletter data</strong> — email address and stated topic preference, only if you opt in.</li>
+            <li><strong class="font-semibold text-navy-900">Service data</strong> — information required to operate your managed environment, held under a signed agreement and governed by the Master Service Agreement.</li>
+            <li><strong class="font-semibold text-navy-900">Log data</strong> — IP address, browser type and pages visited, collected through privacy-respecting, aggregate analytics.</li>
+          </ul>
+
+          <h3 class="h3">How we use it</h3>
+          <p>
+            To respond to your request, to prepare and deliver an audit, to provide contracted
+            services, to invoice you, and to improve our website. We rely on legitimate interests
+            for marketing to existing contacts and on consent for the newsletter.
+          </p>
+
+          <h3 class="h3">Retention and security</h3>
+          <p>
+            Enquiry data is retained for 24 months, then deleted. Newsletter subscriptions are kept
+            until you unsubscribe. Service data is retained for the contract term plus 90 days for
+            exit and handover obligations. Data is encrypted in transit and at rest, and access is
+            restricted on a least-privilege basis with MFA enforced.
+          </p>
+
+          <h3 class="h3">Your rights</h3>
+          <p>
+            You may request access to, correction of, or deletion of your personal data, and you may
+            object to or request restriction of processing. We respond within 30 days. Email
+            <a href="mailto:privacy@kilstar.example" class="font-semibold text-electric-700 hover:underline">privacy@kilstar.example</a>
+            or write to our head office. If you are in the EU/UK you may also complain to your
+            local supervisory authority.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== TERMS =============================== -->
+<section id="terms" class="section bg-slate-50">
+  <div class="container-page">
+    <div class="grid gap-12 lg:grid-cols-12 lg:gap-16">
+      <div class="lg:col-span-4">
+        <div class="lg:sticky lg:top-28">
+          <h2 class="h2 text-2xl">Terms of Service</h2>
+          <nav aria-label="On this page" class="mt-6 border-l-2 border-slate-200 pl-4">
+            <ul class="space-y-2.5 text-sm">
+              <li><a href="#privacy" class="text-slate-600 transition-colors hover:text-navy-900">Privacy Policy</a></li>
+              <li><a href="#terms" class="font-medium text-navy-900">Terms of Service</a></li>
+              <li><a href="#sla" class="text-slate-600 transition-colors hover:text-navy-900">SLA Terms</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="lg:col-span-8">
+        <div class="prose-copy space-y-6 text-[0.95rem]">
+          <p>
+            These terms govern access to this website and any free audit, assessment or resource we
+            provide through it. Paid services are governed exclusively by the Master Service
+            Agreement executed by both parties.
+          </p>
+
+          <h3 class="h3">Website use</h3>
+          <p>
+            You may read, print and share our content for internal business purposes. You may not
+            scrape, resell, republish or misrepresent our materials as your own. All content is
+            provided for general information and is not legal, financial or compliance advice.
+          </p>
+
+          <h3 class="h3">Free assessments</h3>
+          <p>
+            Audits, assessments and resource downloads are provided free of charge and without
+            obligation. They reflect our professional opinion at the time of writing and are based
+            on the information available to us. We are not liable for decisions taken solely in
+            reliance on them.
+          </p>
+
+          <h3 class="h3">Intellectual property</h3>
+          <p>
+            The Kilstar name, logo, site design and original content are our property. Templates
+            and checklists are licensed for internal use and may not be redistributed commercially.
+          </p>
+
+          <h3 class="h3">Availability and liability</h3>
+          <p>
+            This site is provided "as is". We do not warrant uninterrupted availability. To the
+            extent permitted by law, our aggregate liability arising from use of this site is
+            limited to $500. Nothing here limits liability that cannot lawfully be limited, including
+            for fraud or gross negligence.
+          </p>
+
+          <h3 class="h3">Governing law</h3>
+          <p>
+            These terms are governed by the laws of the State of Texas, United States, without
+            regard to conflict-of-law rules. Exclusive jurisdiction lies in Travis County, Texas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================ SLA ================================= -->
+<section id="sla" class="section bg-white">
+  <div class="container-page">
+    <div class="grid gap-12 lg:grid-cols-12 lg:gap-16">
+      <div class="lg:col-span-4">
+        <div class="lg:sticky lg:top-28">
+          <h2 class="h2 text-2xl">Service Level Agreement</h2>
+          <nav aria-label="On this page" class="mt-6 border-l-2 border-slate-200 pl-4">
+            <ul class="space-y-2.5 text-sm">
+              <li><a href="#privacy" class="text-slate-600 transition-colors hover:text-navy-900">Privacy Policy</a></li>
+              <li><a href="#terms" class="text-slate-600 transition-colors hover:text-navy-900">Terms of Service</a></li>
+              <li><a href="#sla" class="font-medium text-navy-900">SLA Terms</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="lg:col-span-8">
+        <div class="prose-copy space-y-6 text-[0.95rem]">
+          <p>
+            Every managed engagement carries a written SLA with response and resolution targets,
+            measurement windows, exclusions and an automatic credit schedule. The summary below is
+            the standard Professional-plan position; Enterprise plans are negotiated.
+          </p>
+
+          <h3 class="h3">Response and resolution targets</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[28rem] text-left text-sm">
+              <caption class="sr-only">SLA response and resolution targets by priority</caption>
+              <thead class="border-b-2 border-slate-200 text-2xs tracking-wide text-slate-500 uppercase">
+                <tr>
+                  <th scope="col" class="py-3 pr-4 font-semibold">Priority</th>
+                  <th scope="col" class="py-3 pr-4 font-semibold">Example</th>
+                  <th scope="col" class="py-3 pr-4 font-semibold">Response</th>
+                  <th scope="col" class="py-3 font-semibold">Resolution</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr><th scope="row" class="py-3 pr-4 font-semibold text-navy-900">P1 Critical</th><td class="py-3 pr-4">Business down site-wide</td><td class="py-3 pr-4 font-mono">15 min</td><td class="py-3 font-mono">4 hrs</td></tr>
+                <tr><th scope="row" class="py-3 pr-4 font-semibold text-navy-900">P2 High</th><td class="py-3 pr-4">Many users, no workaround</td><td class="py-3 pr-4 font-mono">1 hour</td><td class="py-3 font-mono">8 hrs</td></tr>
+                <tr><th scope="row" class="py-3 pr-4 font-semibold text-navy-900">P3 Normal</th><td class="py-3 pr-4">Some users, workaround exists</td><td class="py-3 pr-4 font-mono">4 hours</td><td class="py-3 font-mono">2 days</td></tr>
+                <tr><th scope="row" class="py-3 pr-4 font-semibold text-navy-900">P4 Request</th><td class="py-3 pr-4">New requirement, no outage</td><td class="py-3 pr-4 font-mono">1 day</td><td class="py-3 font-mono">5 days</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="h3">Uptime commitment</h3>
+          <p>
+            99.99% monthly availability for managed production systems, measured per calendar month
+            excluding agreed maintenance windows. Availability is calculated as
+            (total minutes − downtime minutes) ÷ total minutes.
+          </p>
+
+          <h3 class="h3">Service credits</h3>
+          <ul class="check-list text-[0.95rem]">
+            <li>Missed P1 response: 5% of the monthly fee per affected system.</li>
+            <li>Uptime below 99.9%: 5% credit; below 99.0%: 10%; below 95.0%: 20%.</li>
+            <li>Missed monthly review: 5% credit.</li>
+            <li>Credits are applied automatically. You do not need to ask.</li>
+          </ul>
+
+          <h3 class="h3">Reporting and review</h3>
+          <p>
+            Clients receive a live dashboard, a monthly service report and a quarterly business
+            review. Service credits for a month are confirmed in the following month's report.
+          </p>
+
+          <h3 class="h3">Exclusions</h3>
+          <p>
+            Scheduled maintenance notified at least 72 hours in advance, third-party carrier or
+            utility failures, and outages caused by client equipment or configuration changes made
+            outside our documented procedures.
+          </p>
+        </div>
+
+        <div class="card mt-10 flex flex-col gap-5 p-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p class="text-base font-semibold text-navy-900">Need the full contractual SLA?</p>
+            <p class="mt-1 text-sm text-slate-600">We send the complete document with every proposal.</p>
+          </div>
+          <button type="button" data-modal-open="audit-modal" class="btn-primary shrink-0">Request it</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+
+<!-- ============================== FOOTER ============================== -->
+    <footer class="bg-navy-950 text-slate-300">
+      <div class="container-page py-16">
+        <div class="grid gap-12 lg:grid-cols-12">
+          <div class="lg:col-span-4">
+            <a href="index.html" class="flex items-center gap-2.5" aria-label="Kilstar ICT and Business Consultants — home">
+              <img src="assets/img/logo.svg" alt="" width="40" height="40" class="size-10" />
+              <span class="flex flex-col leading-none">
+                <span class="text-[0.95rem] font-bold tracking-tight text-white">Kilstar</span>
+                <span class="mt-0.5 text-[0.6rem] font-semibold tracking-[0.22em] text-teal-300 uppercase">ICT &amp; Business</span>
+              </span>
+            </a>
+            <p class="mt-5 max-w-sm text-sm leading-relaxed text-slate-400">
+              Enterprise-grade IT and cybersecurity services for growing businesses. Since 2014 we
+              have helped 400+ organisations run on secure, scalable, well-managed technology.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <a href="https://www.linkedin.com/company/kilstar-ict-consultants" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-white/10 text-slate-400 transition-colors hover:border-teal-300/40 hover:text-teal-300" aria-label="Kilstar ICT and Business Consultants on LinkedIn (opens in a new tab)">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21h-4V9Z" /></svg>
+              </a>
+              <a href="https://x.com/kilstarict" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-white/10 text-slate-400 transition-colors hover:border-teal-300/40 hover:text-teal-300" aria-label="Kilstar ICT and Business Consultants on X (opens in a new tab)">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 3h3.1l-6.8 7.8L21.8 21h-6.2l-4.9-6.4L5.1 21H2l7.3-8.3L2.2 3h6.4l4.4 5.8L17.5 3Zm-1.1 16.1h1.7L7.7 4.8H5.9l10.5 14.3Z" /></svg>
+              </a>
+              <a href="https://www.facebook.com/kilstarict" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-white/10 text-slate-400 transition-colors hover:border-teal-300/40 hover:text-teal-300" aria-label="Kilstar ICT and Business Consultants on Facebook (opens in a new tab)">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z" /></svg>
+              </a>
+              <a href="https://www.youtube.com/@kilstarict" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-white/10 text-slate-400 transition-colors hover:border-teal-300/40 hover:text-teal-300" aria-label="Kilstar ICT and Business Consultants on YouTube (opens in a new tab)">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2c-.23-.87-.9-1.54-1.77-1.77C18.23 5 12 5 12 5s-6.23 0-7.83.43A2.42 2.42 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8c.23.87.9 1.54 1.77 1.77C5.77 19 12 19 12 19s6.23 0 7.83-.43a2.42 2.42 0 0 0 1.77-1.77c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15.1V8.9l5.2 3.1-5.2 3.1Z" /></svg>
+              </a>
+              <a href="https://github.com/kilstar-ict-consultants" target="_blank" rel="noopener noreferrer" class="flex size-9 items-center justify-center rounded-lg border border-white/10 text-slate-400 transition-colors hover:border-teal-300/40 hover:text-teal-300" aria-label="Kilstar ICT and Business Consultants on GitHub (opens in a new tab)">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <nav class="lg:col-span-2" aria-label="Footer — services">
+            <h2 class="text-2xs font-semibold tracking-[0.18em] text-white uppercase">Services</h2>
+            <ul class="mt-5 space-y-3 text-sm">
+              <li><a href="services.html#managed-services" class="text-slate-400 transition-colors hover:text-teal-300">Managed IT Support</a></li>
+              <li><a href="services.html#help-desk" class="text-slate-400 transition-colors hover:text-teal-300">Help Desk</a></li>
+              <li><a href="services.html#cloud" class="text-slate-400 transition-colors hover:text-teal-300">Cloud Solutions</a></li>
+              <li><a href="services.html#security" class="text-slate-400 transition-colors hover:text-teal-300">Cybersecurity</a></li>
+              <li><a href="services.html#backup-dr" class="text-slate-400 transition-colors hover:text-teal-300">Backup &amp; DR</a></li>
+              <li><a href="services.html#consulting" class="text-slate-400 transition-colors hover:text-teal-300">IT Consulting</a></li>
+            </ul>
+          </nav>
+
+          <nav class="lg:col-span-2" aria-label="Footer — company">
+            <h2 class="text-2xs font-semibold tracking-[0.18em] text-white uppercase">Company</h2>
+            <ul class="mt-5 space-y-3 text-sm">
+              <li><a href="about.html" class="text-slate-400 transition-colors hover:text-teal-300">About Us</a></li>
+              <li><a href="industries.html" class="text-slate-400 transition-colors hover:text-teal-300">Industries</a></li>
+              <li><a href="resources.html" class="text-slate-400 transition-colors hover:text-teal-300">Resources</a></li>
+              <li><a href="contact.html" class="text-slate-400 transition-colors hover:text-teal-300">Contact</a></li>
+              <li><a href="resources.html#faq" class="text-slate-400 transition-colors hover:text-teal-300">FAQ</a></li>
+              <li><a href="about.html#careers" class="text-slate-400 transition-colors hover:text-teal-300">Careers</a></li>
+            </ul>
+          </nav>
+
+          <div class="lg:col-span-4">
+            <h2 class="text-2xs font-semibold tracking-[0.18em] text-white uppercase">Head office</h2>
+            <address class="mt-5 space-y-3 text-sm not-italic text-slate-400">
+              <p class="flex gap-3">
+                <svg class="mt-0.5 size-4 shrink-0 text-teal-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M20 10.5c0 5.2-8 12-8 12s-8-6.8-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10.5" r="2.8" />
+                </svg>
+                <span>4200 Meridian Parkway, Suite 900<br />Austin, TX 78759, United States</span>
+              </p>
+              <p class="flex gap-3">
+                <svg class="mt-0.5 size-4 shrink-0 text-teal-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M6.5 3.5 3 5.8v15.2l3.5-2.3 11 2.3 3.5-2.3V3.5L17.5 5.8l-11-2.3Z" />
+                </svg>
+                <span>+1 (555) 010-8800 · 24/7 service desk</span>
+              </p>
+              <p class="flex gap-3">
+                <svg class="mt-0.5 size-4 shrink-0 text-teal-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3.5 6.5 8.5 6 8.5-6" />
+                </svg>
+                <a href="mailto:hello@kilstar.example" class="transition-colors hover:text-teal-300">hello@kilstar.example</a>
+              </p>
+            </address>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="badge-dark">SOC 2 Type II</span>
+              <span class="badge-dark">ISO 27001</span>
+              <span class="badge-dark">HIPAA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; <span data-year>2026</span> Kilstar ICT and Business Consultants All rights reserved.</p>
+          <ul class="flex flex-wrap gap-x-6 gap-y-2">
+            <li><a href="legal.html#privacy" class="transition-colors hover:text-teal-300">Privacy Policy</a></li>
+            <li><a href="legal.html#terms" class="transition-colors hover:text-teal-300">Terms of Service</a></li>
+            <li><a href="legal.html#sla" class="transition-colors hover:text-teal-300">SLA Terms</a></li>
+            <li><a href="contact.html" class="transition-colors hover:text-teal-300">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+<div
+      id="audit-modal"
+      data-modal
+      hidden
+      class="fixed inset-0 z-[90] flex items-end justify-center overflow-y-auto bg-navy-975/70 p-0 backdrop-blur-sm sm:items-center sm:p-6"
+    >
+      <div
+        data-modal-panel
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="audit-modal-title"
+        class="relative w-full max-w-2xl rounded-t-3xl bg-white shadow-card-lg sm:rounded-3xl"
+      >
+        <button
+          type="button"
+          data-modal-close
+          class="absolute top-4 right-4 z-10 flex size-9 items-center justify-center rounded-full text-slate-400 transition-colors hover:bg-slate-100 hover:text-navy-900"
+        >
+          <span class="sr-only">Close dialog</span>
+          <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Header band -->
+        <div class="relative overflow-hidden rounded-t-3xl bg-navy-950 px-6 py-7 sm:px-8">
+          <div class="bg-grid absolute inset-0 opacity-60" aria-hidden="true"></div>
+          <div class="absolute -top-16 -right-10 size-56 rounded-full bg-electric-500/25 blur-3xl" aria-hidden="true"></div>
+          <div class="relative">
+            <p class="eyebrow eyebrow-dark">Free · 30 minutes</p>
+            <h2 id="audit-modal-title" class="h2 mt-3 text-white">Book an IT Audit</h2>
+            <p class="mt-2 text-sm text-slate-300">
+              A solutions engineer reviews your environment and sends back a written summary —
+              even if you decide not to work with us.
+            </p>
+          </div>
+        </div>
+
+        <div class="max-h-[70dvh] overflow-y-auto px-6 py-6 sm:px-8 sm:py-7">
+          <p data-form-summary role="alert" hidden class="mb-5 rounded-xl border border-danger-500/30 bg-danger-500/[0.07] px-4 py-3 text-sm font-medium text-danger-600"></p>
+
+          <form data-validate novalidate class="grid gap-5 sm:grid-cols-2">
+            <div>
+              <label class="label" for="m-name">Full name <span class="text-danger-600">*</span></label>
+              <input class="input" type="text" id="m-name" name="name" autocomplete="name" required minlength="2" placeholder="Jane Cooper" />
+            </div>
+            <div>
+              <label class="label" for="m-email">Work email <span class="text-danger-600">*</span></label>
+              <input class="input" type="email" id="m-email" name="email" autocomplete="email" required placeholder="jane@company.com" />
+            </div>
+            <div>
+              <label class="label" for="m-company">Company <span class="text-danger-600">*</span></label>
+              <input class="input" type="text" id="m-company" name="company" autocomplete="organization" required placeholder="Company name" />
+            </div>
+            <div>
+              <label class="label" for="m-users">Team size</label>
+              <select class="select" id="m-users" name="users">
+                <option value="">Select…</option>
+                <option>1–25 employees</option>
+                <option>26–100 employees</option>
+                <option>101–500 employees</option>
+                <option>500+ employees</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="label" for="m-service">Service needed <span class="text-danger-600">*</span></label>
+              <select class="select" id="m-service" name="service" required>
+                <option value="">Choose a service…</option>
+                <option>Managed IT Support</option>
+                <option>Help Desk &amp; Service Desk</option>
+                <option>Cloud Solutions</option>
+                <option>Cybersecurity &amp; Compliance</option>
+                <option>IT Consulting</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="label" for="m-message">What should we know? <span class="text-danger-600">*</span></label>
+              <textarea class="textarea" id="m-message" name="message" required minlength="20" placeholder="e.g. 180 users across 3 offices, currently on on-prem Exchange, need HIPAA readiness by Q3."></textarea>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="flex cursor-pointer items-start gap-3 text-sm text-slate-600">
+                <input type="checkbox" name="consent" required class="mt-0.5 size-4 shrink-0 rounded border-slate-300 text-electric-600 focus:ring-2 focus:ring-electric-500/30" />
+                <span>I agree to be contacted about this request. <span class="text-danger-600">*</span></span>
+              </label>
+            </div>
+            <div class="sm:col-span-2">
+              <button type="submit" class="btn-primary btn-lg btn-block">
+                Book my audit
+                <svg class="size-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </button>
+              <p data-form-status role="status" aria-live="polite" class="mt-3 text-center text-sm font-medium text-slate-600"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

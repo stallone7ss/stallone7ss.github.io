@@ -1,0 +1,580 @@
+/* ==========================================================================
+   Kilstar ICT and Business Consultants — Tailwind CSS v4 entry point
+   --------------------------------------------------------------------------
+   In Tailwind v4 the configuration lives in CSS via @theme (design tokens)
+   plus @layer blocks. This file is the single source of design truth:
+
+     assets/css/main.css   ->  design tokens + components  (edit this)
+     assets/css/app.css    ->  compiled, minified output    (generated)
+
+   Rebuild with:  npm run build     Watch with:  npm run dev
+   ========================================================================== */
+
+@import "tailwindcss";
+
+/* --------------------------------------------------------------------------
+   1. DESIGN TOKENS  (@theme)
+   Exposed to markup as utilities, e.g. --color-navy-900 -> bg-navy-900
+   -------------------------------------------------------------------------- */
+@theme {
+  /* --- Primary: deep navy (trust, authority, dark surfaces) --- */
+  --color-navy-50: #f1f5fc;
+  --color-navy-100: #dfe8f8;
+  --color-navy-200: #bccdef;
+  --color-navy-300: #8eabde;
+  --color-navy-400: #5a80c9;
+  --color-navy-500: #365bad;
+  --color-navy-600: #274593;
+  --color-navy-700: #203879;
+  --color-navy-800: #1b2e60;
+  --color-navy-900: #16254c;
+  --color-navy-950: #0a1430;
+  --color-navy-975: #060d21;
+
+  /* --- Accent: electric blue (primary CTA) --- */
+  --color-electric-50: #eff8ff;
+  --color-electric-100: #daeeff;
+  --color-electric-200: #b9deff;
+  --color-electric-300: #87c8ff;
+  --color-electric-400: #4fadff;
+  --color-electric-500: #1b90ff;
+  --color-electric-600: #0670f0;
+  --color-electric-700: #0659d6;
+  --color-electric-800: #0b4aad;
+  --color-electric-900: #0d4089;
+  --color-electric-950: #0a2757;
+
+  /* --- Accent: teal (secondary accent, success, gradients) --- */
+  --color-teal-50: #eefdfa;
+  --color-teal-100: #c6f9f0;
+  --color-teal-200: #8ff1e4;
+  --color-teal-300: #4fe3d3;
+  --color-teal-400: #1ec9bc;
+  --color-teal-500: #0bab9f;
+  --color-teal-600: #088a83;
+  --color-teal-700: #0a6e6b;
+  --color-teal-800: #0d5856;
+  --color-teal-900: #114947;
+  --color-teal-950: #022c2e;
+
+  /* --- Status --- */
+  --color-success-400: #34d399;
+  --color-success-500: #10b981;
+  --color-success-600: #059669;
+  --color-warning-400: #fbbf24;
+  --color-warning-500: #f59e0b;
+  --color-danger-400: #f87171;
+  --color-danger-500: #ef4444;
+  --color-danger-600: #dc2626;
+
+  /* --- Typography (system stack = zero network cost, high legibility) --- */
+  --font-sans: "Inter", "Inter var", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono",
+    Menlo, Consolas, monospace;
+
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+
+  /* --- Elevation --- */
+  --shadow-btn: 0 1px 2px rgb(6 13 33 / 0.16), 0 8px 24px -8px rgb(6 13 33 / 0.28);
+  --shadow-btn-lg: 0 2px 4px rgb(6 13 33 / 0.2), 0 18px 40px -12px rgb(6 13 33 / 0.38);
+  --shadow-card: 0 1px 2px rgb(6 13 33 / 0.06), 0 12px 32px -12px rgb(6 13 33 / 0.16);
+  --shadow-card-lg: 0 2px 4px rgb(6 13 33 / 0.08), 0 28px 56px -20px rgb(6 13 33 / 0.24);
+  --shadow-glow: 0 0 0 1px rgb(30 201 188 / 0.28), 0 20px 60px -20px rgb(27 144 255 / 0.5);
+
+  /* --- Radii --- */
+  --radius-4xl: 2rem;
+  --radius-5xl: 2.75rem;
+
+  /* --- Motion --- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-fade-up: fade-up 0.7s var(--ease-out-expo) both;
+  --animate-fade-in: fade-in 0.6s ease-out both;
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-pulse-ring: pulse-ring 2.6s var(--ease-out-expo) infinite;
+}
+
+/* Keyframes live at root scope so both the animation utilities above and the
+   component rules further down can reference them. */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. BASE
+   -------------------------------------------------------------------------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* keeps anchored sections clear of the sticky header */
+    scroll-padding-top: 6.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white font-sans text-slate-700 antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-semibold tracking-tight text-navy-900;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Consistent, always-visible keyboard focus (WCAG 2.4.7) */
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    @apply outline-2 outline-offset-2 outline-electric-500;
+    border-radius: 0.25rem;
+  }
+
+  ::selection {
+    @apply bg-electric-500/25 text-navy-950;
+  }
+
+  /* Form control normalisation so custom fields look native-consistent */
+  input,
+  select,
+  textarea,
+  button {
+    font: inherit;
+    color: inherit;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3a. SHARED PRIMITIVE UTILITIES
+   Registered with @utility (not @layer components) so that other component
+   classes can compose them with @apply — v4 only allows @apply on utilities.
+   -------------------------------------------------------------------------- */
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold whitespace-nowrap transition-all duration-200 select-none disabled:cursor-not-allowed disabled:opacity-55;
+}
+@utility card {
+  @apply relative rounded-2xl border border-slate-200 bg-white shadow-card transition-all duration-300;
+}
+@utility check-list {
+  @apply space-y-3 text-slate-600;
+}
+@utility check-list-dark {
+  @apply space-y-3 text-slate-300;
+}
+@utility badge {
+  @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-2xs font-semibold tracking-wide;
+}
+
+/* --------------------------------------------------------------------------
+   3b. COMPONENTS
+   -------------------------------------------------------------------------- */
+@layer components {
+  /* ---- Layout helpers ---- */
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+  .section {
+    @apply py-16 sm:py-20 lg:py-28;
+  }
+  .section-tight {
+    @apply py-12 sm:py-16;
+  }
+
+  /* ---- Type scale ---- */
+  .h-display {
+    @apply text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl;
+  }
+  .h1 {
+    @apply text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl;
+  }
+  .h2 {
+    @apply text-2xl font-bold leading-tight tracking-tight sm:text-3xl lg:text-[2.5rem];
+  }
+  .h3 {
+    @apply text-lg font-semibold leading-snug sm:text-xl;
+  }
+  .lede {
+    @apply text-base leading-relaxed text-slate-600 sm:text-lg;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-electric-500/25 bg-electric-500/10 px-3 py-1 text-2xs font-semibold tracking-[0.18em] text-electric-700 uppercase;
+  }
+  .eyebrow-dark {
+    @apply border-teal-300/25 bg-teal-300/10 text-teal-200;
+  }
+  .prose-copy {
+    @apply leading-relaxed text-slate-600;
+  }
+
+  /* ---- Buttons ---- */
+  .btn-primary {
+    @apply btn bg-electric-600 text-white shadow-btn hover:bg-electric-700 hover:shadow-btn-lg active:translate-y-px;
+  }
+  .btn-accent {
+    @apply btn bg-teal-400 text-navy-950 shadow-btn hover:bg-teal-300 hover:shadow-btn-lg active:translate-y-px;
+  }
+  .btn-dark {
+    @apply btn bg-navy-900 text-white shadow-btn hover:bg-navy-800 hover:shadow-btn-lg active:translate-y-px;
+  }
+  .btn-outline {
+    @apply btn border border-slate-300 bg-white text-navy-900 shadow-xs hover:border-navy-400 hover:bg-navy-50 active:translate-y-px;
+  }
+  .btn-ghost-light {
+    @apply btn border border-white/25 bg-white/10 text-white backdrop-blur-sm hover:border-white/45 hover:bg-white/20 active:translate-y-px;
+  }
+  .btn-ghost-dark {
+    @apply btn text-navy-800 hover:bg-navy-900/5;
+  }
+  .btn-lg {
+    @apply px-6 py-3.5 text-base;
+  }
+  .btn-sm {
+    @apply px-3.5 py-2 text-xs;
+  }
+  .btn-block {
+    @apply w-full;
+  }
+
+  /* ---- Cards & surfaces ---- */
+  .card-hover {
+    @apply card hover:-translate-y-1 hover:border-electric-500/40 hover:shadow-card-lg;
+  }
+  .card-glass {
+    @apply rounded-2xl border border-white/12 bg-white/[0.06] backdrop-blur-md;
+  }
+  .panel-dark {
+    @apply rounded-2xl border border-white/10 bg-white/[0.04];
+  }
+
+  /* Icon tile used by service / feature cards */
+  .icon-tile {
+    @apply inline-flex size-12 shrink-0 items-center justify-center rounded-xl bg-electric-500/10 text-electric-600 ring-1 ring-electric-500/15 transition-colors duration-300;
+  }
+  .icon-tile-dark {
+    @apply bg-teal-300/10 text-teal-300 ring-teal-300/20;
+  }
+  .icon-tile-lg {
+    @apply size-14 rounded-2xl;
+  }
+
+  /* ---- Badges / pills ---- */
+  .badge-brand {
+    @apply badge bg-electric-500/10 text-electric-700 ring-1 ring-inset ring-electric-500/20;
+  }
+  .badge-success {
+    @apply badge bg-success-500/10 text-success-600 ring-1 ring-inset ring-success-500/25;
+  }
+  .badge-dark {
+    @apply badge bg-white/10 text-white/85 ring-1 ring-inset ring-white/15;
+  }
+
+  /* ---- Decorative backgrounds ---- */
+  .bg-grid {
+    background-image: linear-gradient(
+        to right,
+        rgb(255 255 255 / 0.06) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .bg-grid-light {
+    background-image: linear-gradient(
+        to right,
+        rgb(22 37 76 / 0.05) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgb(22 37 76 / 0.05) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .bg-dot-light {
+    background-image: radial-gradient(rgb(22 37 76 / 0.14) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+  }
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent);
+    mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  }
+
+  /* ---- Forms ---- */
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-navy-900;
+  }
+  .hint {
+    @apply mt-1.5 text-xs text-slate-500;
+  }
+  .input,
+  .select,
+  .textarea {
+    @apply block w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-[0.95rem] text-navy-900 shadow-xs transition-colors duration-200 placeholder:text-slate-400 hover:border-slate-400 focus:border-electric-500 focus:ring-4 focus:ring-electric-500/15 focus:outline-none;
+  }
+  .textarea {
+    @apply min-h-32 resize-y;
+  }
+  .select {
+    @apply cursor-pointer appearance-none bg-[length:1.1rem] bg-[right_0.9rem_center] bg-no-repeat pr-11;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2' stroke='%2364748b'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='m19.5 8.25-7.5 7.5-7.5-7.5'/%3E%3C/svg%3E");
+  }
+  /* Invalid state (set by the validator via aria-invalid) */
+  .input[aria-invalid="true"],
+  .select[aria-invalid="true"],
+  .textarea[aria-invalid="true"] {
+    @apply border-danger-500 bg-danger-500/[0.04] focus:border-danger-500 focus:ring-danger-500/20;
+  }
+  .error-msg {
+    @apply mt-1.5 flex items-start gap-1.5 text-xs font-medium text-danger-600;
+  }
+  .error-msg:empty {
+    display: none;
+  }
+
+  /* ---- Nav ---- */
+  .nav-link {
+    @apply relative inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-navy-900;
+  }
+  .nav-link::after {
+    content: "";
+    @apply absolute inset-x-3 -bottom-0.5 h-0.5 origin-left scale-x-0 rounded-full bg-electric-500 transition-transform duration-200;
+  }
+  .nav-link:hover::after,
+  .nav-link:focus-visible::after,
+  .nav-link[aria-current="page"]::after {
+    @apply scale-x-100;
+  }
+  .nav-link[aria-current="page"] {
+    @apply text-navy-900;
+  }
+
+  /* ---- Nav (stateful: driven by data attributes from main.js) ---- */
+  [data-header] {
+    @apply sticky top-0 z-50 border-b border-transparent bg-white/85 backdrop-blur-xl;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+  }
+  [data-header].is-scrolled {
+    @apply border-slate-200/90 bg-white/95 shadow-card;
+  }
+
+  [data-nav-menu].is-open [data-nav-panel] {
+    animation: fade-up 0.28s var(--ease-out-expo) both;
+  }
+  /* Nested sub-list inside the mobile drawer */
+  [data-submenu] > [data-submenu-panel] {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.25s ease;
+  }
+  [data-submenu].is-open > [data-submenu-panel] {
+    grid-template-rows: 1fr;
+  }
+  [data-submenu] > [data-submenu-panel] > div {
+    overflow: hidden;
+  }
+
+  [data-dropdown-panel] {
+    @apply invisible absolute top-full left-0 z-50 w-[22rem] origin-top-left translate-y-1 rounded-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-card-lg transition-all duration-200;
+  }
+  [data-dropdown].is-open [data-dropdown-panel] {
+    @apply visible translate-y-0 opacity-100;
+  }
+  [data-dropdown-trigger] svg {
+    @apply transition-transform duration-200;
+  }
+  [data-dropdown].is-open [data-dropdown-trigger] svg {
+    transform: rotate(180deg);
+  }
+  [data-dropdown-trigger][aria-expanded="true"] {
+    @apply text-navy-900;
+  }
+
+  /* ---- Tabs ---- */
+  .tab-btn {
+    @apply flex w-full items-center gap-4 rounded-2xl border border-slate-200 bg-white px-5 py-4 text-left transition-all duration-200 hover:border-electric-500/40 hover:bg-electric-50/40;
+  }
+  .tab-btn[aria-selected="true"] {
+    @apply border-electric-500 bg-electric-500/[0.07] shadow-card ring-1 ring-electric-500/25;
+  }
+
+  /* ---- Accordion ---- */
+  .acc-trigger {
+    @apply flex w-full items-center justify-between gap-6 py-5 text-left text-base font-semibold text-navy-900 transition-colors duration-200 hover:text-electric-700;
+  }
+  .acc-icon {
+    @apply flex size-8 shrink-0 items-center justify-center rounded-full border border-slate-300 text-slate-500 transition-all duration-300;
+  }
+  .acc-trigger[aria-expanded="true"] .acc-icon {
+    @apply rotate-45 border-electric-500 bg-electric-500 text-white;
+  }
+  .acc-panel {
+    @apply grid transition-[grid-template-rows,opacity] duration-300 ease-out;
+    grid-template-rows: 0fr;
+    opacity: 0;
+  }
+  .acc-panel[data-open="true"] {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+  .acc-panel > div {
+    @apply overflow-hidden;
+  }
+
+  /* ---- Misc ---- */
+  .link-arrow {
+    @apply inline-flex items-center gap-1.5 text-sm font-semibold text-electric-700 transition-colors hover:text-electric-800;
+  }
+  .link-arrow svg {
+    @apply transition-transform duration-200;
+  }
+  .link-arrow:hover svg {
+    transform: translateX(3px);
+  }
+  .divider {
+    @apply border-t border-slate-200;
+  }
+  .stat-num {
+    @apply text-3xl font-bold tracking-tight text-white tabular-nums sm:text-4xl;
+  }
+  .check-list li {
+    @apply relative pl-7 leading-relaxed;
+  }
+  .check-list li::before {
+    content: "";
+    @apply absolute top-0.5 left-0 size-5 rounded-full bg-success-500/12;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23059669'%3E%3Cpath fill-rule='evenodd' d='M16.7 5.3a1 1 0 0 1 0 1.4l-7.5 7.5a1 1 0 0 1-1.4 0L3.3 9.7a1 1 0 1 1 1.4-1.4l3.8 3.8 6.8-6.8a1 1 0 0 1 1.4 0Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-size: 1.05rem;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .check-list-dark li::before {
+    background-color: rgb(30 201 188 / 0.14);
+  }
+  .cross-list li {
+    @apply relative pl-7 leading-relaxed;
+  }
+  .cross-list li::before {
+    content: "";
+    @apply absolute top-0.5 left-0 size-5 rounded-full bg-danger-500/12;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23dc2626'%3E%3Cpath fill-rule='evenodd' d='M4.3 4.3a1 1 0 1 1 1.4 1.4L8.6 8.6l2.9-2.9a1 1 0 1 1 1.4 1.4L10 10l2.9 2.9a1 1 0 0 1-1.4 1.4L8.6 11.4 5.7 14.3a1 1 0 0 1-1.4-1.4L7 10 4.3 7.3a1 1 0 0 1 0-1.4Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-size: 1.05rem;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. UTILITIES
+   -------------------------------------------------------------------------- */
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-electric-400 via-electric-300 to-teal-300 bg-clip-text text-transparent;
+  }
+  .text-gradient-soft {
+    @apply bg-gradient-to-r from-navy-900 via-navy-700 to-electric-600 bg-clip-text text-transparent;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Reveal-on-scroll: only hidden when JS is present (html.js) so content is
+     never trapped behind a failed script or a crawler that ignores it. */
+  .js [data-reveal] {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+    transition: opacity 0.7s var(--ease-out-expo), transform 0.7s var(--ease-out-expo);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .js [data-reveal="left"] {
+    transform: translate3d(-24px, 0, 0);
+  }
+  .js [data-reveal="scale"] {
+    transform: scale(0.96);
+  }
+  .js [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .js [data-reveal] {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+}

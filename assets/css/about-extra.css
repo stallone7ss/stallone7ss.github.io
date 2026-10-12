@@ -1,0 +1,45 @@
+/* Canoe-themed background for About page leadership section */
+
+.team-canoe-bg {
+  position: relative;
+  overflow: hidden;
+  background-color: #dfeff7;
+  background-image:
+    linear-gradient(180deg, rgba(9, 18, 36, 0.18), rgba(9, 18, 36, 0.42)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cg fill='none'%3E%3Crect width='1600' height='900' fill='%23d3eef7'/%3E%3Cg opacity='.65'%3E%3Cpath d='M0 235L170 180L350 230L510 140L690 210L860 155L1095 220L1260 150L1600 225V0H0z' fill='%2383b8d5'/%3E%3Cpath d='M0 270L200 195L390 230L560 175L760 240L955 185L1185 255L1370 180L1600 250V900H0z' fill='%236ea9c7'/%3E%3Cpath d='M0 540H1600V900H0z' fill='%232a7cc3'/%3E%3Cpath d='M-20 610C180 590 210 505 340 510C520 515 520 610 640 615C760 620 820 515 930 500C1060 485 1100 540 1260 550C1390 557 1505 520 1620 505V900H-20z' fill='%230c6aa7'/%3E%3Cpath d='M0 695C130 705 180 655 300 665C430 675 500 740 650 742C810 743 850 675 980 672C1105 668 1225 720 1350 715C1470 710 1555 662 1600 650V900H0z' fill='%23085b8d'/%3E%3C/g%3E%3Cg opacity='.72'%3E%3Cg stroke='%234c7d90' stroke-width='7' fill='none'%3E%3Cpath d='M0 570h1600'/%3E%3Cpath d='M0 620h1600'/%3E%3Cpath d='M0 670h1600'/%3E%3C/g%3E%3Cg stroke='%2390d6f4' stroke-width='3' opacity='.6'%3E%3Cpath d='M120 575c60 30 80 52 100 90M220 565c50 36 80 62 120 108M340 560c60 35 90 50 115 95M470 565c45 32 75 58 110 98M600 565c52 38 80 63 122 105M760 570c52 33 82 58 118 100M910 560c65 38 92 50 130 103M1080 565c52 36 80 58 116 105M1260 568c56 36 78 58 115 100'/%3E%3C/g%3E%3C/g%3E%3Cg transform='translate(180 210)'%3E%3Cg opacity='.9'%3E%3Crect x='208' y='210' width='1185' height='115' rx='26' fill='%23d24a3d'/%3E%3Cpath d='M160 260h1060c26 0 48 20 48 46v37H110v-38c0-24 21-45 50-45z' fill='%23d24a3d'/%3E%3Cpath d='M145 295h1160' stroke='%23f7f0e8' stroke-width='8' opacity='.7'/%3E%3Cg stroke='%239d3b2b' stroke-width='15' stroke-linecap='round'%3E%3Cpath d='M150 250L85 370'/%3E%3Cpath d='M335 250L270 370'/%3E%3Cpath d='M505 250L445 370'/%3E%3Cpath d='M700 250L640 370'/%3E%3Cpath d='M880 250L825 370'/%3E%3Cpath d='M1100 250L1035 370'/%3E%3Cpath d='M1285 250L1227 370'/%3E%3C/g%3E%3Cg fill='%23f4c36f'%3E%3Ccircle cx='258' cy='96' r='9'/%3E%3Ccircle cx='392' cy='90' r='9'/%3E%3Ccircle cx='515' cy='95' r='9'/%3E%3Ccircle cx='660' cy='96' r='9'/%3E%3Ccircle cx='800' cy='100' r='9'/%3E%3Ccircle cx='934' cy='96' r='9'/%3E%3Ccircle cx='1080' cy='93' r='9'/%3E%3Ccircle cx='1215' cy='110' r='9'/%3E%3C/g%3E%3Cg stroke='%23d9d7d4' stroke-width='7' stroke-linecap='round'%3E%3Cpath d='M215 170l18 96M292 170l18 96M378 165l20 101M520 145l18 120M650 155l18 112M788 155l18 118M950 160l20 108M1086 165l18 102M1218 170l16 108'/%3E%3C/g%3E%3Cg fill='%23c8b39a' stroke='%23695f55' stroke-width='5'%3E%3Cpath d='M145 242c22 7 50 0 73-16 18-13 48-34 54-61 14-52 68-28 70 27 2 48 30 72 69 78 38 6 80 0 119 6 22 3 46 11 60 5 13-5 18-23 16-48l-12-70 38 22c22 12 52 28 67 51 19 28 14 70 5 92l-9 22-34-11-11-27-52-22-39-5-46 8-44 13-62 38-58 8-28 5-55 18-71 17H154l-9-29z'/%3E%3C/g%3E%3Cg stroke='%237a4a35' stroke-width='8' stroke-linecap='round'%3E%3Cpath d='M198 310l18-75M295 315l-15-89M385 315l12-82M512 316l20-93M647 320l18-90M788 324l12-87M932 320l15-78M1080 320l20-80M1222 330l15-90'/%3E%3C/g%3E%3Cg fill='%236b3e2b' stroke='%23301e17' stroke-width='5'%3E%3Ccircle cx='258' cy='180' r='33'/%3E%3Ccircle cx='356' cy='175' r='32'/%3E%3Ccircle cx='470' cy='176' r='32'/%3E%3Ccircle cx='620' cy='178' r='33'/%3E%3Ccircle cx='775' cy='183' r='32'/%3E%3Ccircle cx='930' cy='180' r='33'/%3E%3Ccircle cx='1072' cy='183' r='33'/%3E%3Ccircle cx='1203' cy='185' r='30'/%3E%3C/g%3E%3Cg fill='%23181f27'%3E%3Cellipse cx='256' cy='185' rx='19' ry='12'/%3E%3Cellipse cx='352' cy='180' rx='18' ry='12'/%3E%3Cellipse cx='470' cy='180' rx='18' ry='12'/%3E%3Cellipse cx='620' cy='181' rx='19' ry='12'/%3E%3Cellipse cx='775' cy='187' rx='18' ry='12'/%3E%3Cellipse cx='930' cy='185' rx='19' ry='12'/%3E%3Cellipse cx='1074' cy='188' rx='18' ry='12'/%3E%3Cellipse cx='1201' cy='190' rx='17' ry='12'/%3E%3C/g%3E%3Cg stroke='%2380161a' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M240 200l-34 58M290 200l36 58M350 195l-32 54M390 198l32 54M465 193l-28 52M502 196l30 54M610 196l-38 60M650 197l38 65M765 196l-35 62M805 198l31 54M918 196l-36 60M962 196l38 58M1060 198l-40 63M1105 197l40 61M1190 200l-38 58M1236 201l35 58'/%3E%3C/g%3E%3Cg fill='%23f4d7a8' stroke='%23b48b57' stroke-width='5'%3E%3Cpath d='M225 158c12-12 28-28 46-31 15-3 32 6 39 21 6 13 2 27-8 37-15 15-43 24-62 23-18-1-24-23-15-50z'/%3E%3Cpath d='M352 150c18-16 35-32 60-41 18-7 42-6 51 17 6 15 1 31-9 42-17 18-47 25-70 24-20 0-36-18-32-42z'/%3E%3Cpath d='M598 154c16-13 35-27 58-31 17-3 39 8 46 24 7 18-2 35-21 44-24 12-52 12-74 9-18-3-29-20-9-46z'/%3E%3Cpath d='M768 158c17-13 38-27 62-31 18-3 38 8 44 26 7 19-1 36-21 47-25 14-61 14-80 7-18-7-15-34-5-49z'/%3E%3Cpath d='M920 150c15-13 32-25 56-30 18-4 39 3 49 18 12 20 3 39-18 51-27 15-62 17-83 8-18-8-17-27-4-47z'/%3E%3Cpath d='M1084 154c17-13 36-25 58-29 24-4 42 9 49 26 10 23-6 42-31 53-27 12-58 11-80 3-18-7-18-31 4-53z'/%3E%3Cpath d='M1201 160c15-17 34-28 56-34 20-6 40 1 51 19 12 18 9 37-5 52-16 16-40 27-66 28-24 1-43-13-50-35-3-12-1-23 14-30z'/%3E%3C/g%3E%3Cg isGroup='true'%3E%3Cg fill='%23f8f0e7'%3E%3Cpath d='M260 350l18 14-14 18-18-10 14-22z'/%3E%3Cpath d='M457 354l16 14-14 18-16-12 14-20z'/%3E%3Cpath d='M660 355l18 14-15 19-18-14 15-19z'/%3E%3Cpath d='M867 358l18 14-14 17-18-13 14-18z'/%3E%3Cpath d='M1060 351l18 14-18 18-18-13 18-19z'/%3E%3C/g%3E%3Cg fill='%238d4f39'%3E%3Crect x='245' y='372' width='12' height='85' rx='5'/%3E%3Crect x='452' y='374' width='12' height='90' rx='5'/%3E%3Crect x='655' y='374' width='12' height='89' rx='5'/%3E%3Crect x='862' y='375' width='12' height='87' rx='5'/%3E%3Crect x='1055' y='372' width='12' height='85' rx='5'/%3E%3C/g%3E%3Cg fill='%23f7f0e7'%3E%3Cpath d='M255 370l-95 96 100 0-5-96z'/%3E%3Cpath d='M458 381l-96 89 100 0-4-89z'/%3E%3Cpath d='M663 380l-95 91 99 0-4-91z'/%3E%3Cpath d='M866 381l-96 90 100 0-4-90z'/%3E%3Cpath d='M1060 375l-96 95 100 0-4-95z'/%3E%3C/g%3E%3Cg fill='%23c6d9e6'%3E%3Ccircle cx='188' cy='455' r='35'/%3E%3Ccircle cx='462' cy='468' r='33'/%3E%3Ccircle cx='666' cy='468' r='33'/%3E%3Ccircle cx='871' cy='468' r='33'/%3E%3Ccircle cx='1065' cy='464' r='34'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center center;
+}
+
+.team-canoe-bg .eyebrow,
+.team-canoe-bg .h2,
+.team-canoe-bg .lede,
+.team-canoe-bg .card-hover {
+  position: relative;
+  z-index: 1;
+}
+
+.team-canoe-bg .h2,
+.team-canoe-bg .lede,
+.team-canoe-bg .eyebrow {
+  color: white;
+  text-shadow: 0 2px 12px rgba(3, 10, 24, 0.4);
+}
+
+.team-canoe-bg .card-hover {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 16px 48px rgba(8, 14, 26, 0.18);
+}
+
+.team-canoe-bg .card-hover .h3,
+.team-canoe-bg .card-hover p,
+.team-canoe-bg .card-hover a {
+  color: #0f172a;
+}
+
+@media (max-width: 768px) {
+  .team-canoe-bg {
+    background-position: center 30%;
+  }
+}

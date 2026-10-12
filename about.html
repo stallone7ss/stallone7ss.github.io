@@ -1,1 +1,787 @@
-    <link rel="stylesheet" href="assets/css/about-extra.css" />
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About KILSTA Business & ICT Consultants — Milne Bay, Papua New Guinea</title>
+    <meta name="description" content="KILSTA is a locally owned Business & ICT consultancy from Alotau, Milne Bay. Learn our story, values, leadership and the qualifications behind our team." />
+    <meta name="theme-color" content="#0a1430" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <script>
+      // Set before first paint so reveal animations only hide content when JS runs.
+      document.documentElement.classList.add("js");
+      // Safety net: if assets/js/main.js never loads, drop the "js" flag so that
+      // [data-reveal] content is not left permanently invisible.
+      setTimeout(function () {
+        if (!document.documentElement.hasAttribute("data-js-ready")) {
+          document.documentElement.classList.remove("js");
+        }
+      }, 5000);
+    </script>
+
+  </head>
+
+  <body class="bg-white">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-lg focus:bg-navy-900 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
+      >Skip to main content</a
+    >
+
+<!-- ============================== HEADER ============================== -->
+    <header data-header>
+      <div class="container-page flex h-16 items-center justify-between gap-4 lg:h-20">
+        <div class="flex items-center gap-6 lg:gap-8">
+          <!-- Logo -->
+          <a href="index.html" class="flex shrink-0 items-center" aria-label="KILSTA Business &amp; ICT Consultants — home">
+            <img src="assets/img/logo.jpg" alt="" class="block size-5 object-contain" />
+          </a>
+
+          <!-- Desktop nav -->
+          <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+          <a href="index.html" class="nav-link" data-nav="home">Home</a>
+
+          <div class="relative" data-dropdown>
+            <button
+              type="button"
+              class="nav-link"
+              data-dropdown-trigger
+              data-nav="services"
+              aria-expanded="false"
+              aria-controls="nav-services-menu"
+            >
+              Services
+              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </button>
+            <div id="nav-services-menu" data-dropdown-panel class="w-[26rem] p-2.5">
+              <p class="px-3 pt-1.5 pb-1 text-2xs font-semibold tracking-[0.16em] text-slate-400 uppercase">What we do</p>
+              <a href="services.html#business-services" class="group flex gap-3 rounded-xl p-3 transition-colors hover:bg-navy-50">
+                <span class="icon-tile size-9 rounded-lg">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M4 19.5V6a2 2 0 0 1 2-2h9l5 5v10.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z" /><path d="M14 4v5h5M8.5 13.5h7M8.5 16.5h4" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-sm font-semibold text-navy-900">Business Services</span>
+                  <span class="mt-0.5 block text-xs text-slate-500">Business profiles, IPA name registration, TIN, proposals &amp; bookkeeping training</span>
+                </span>
+              </a>
+              <a href="services.html#ict-services" class="group flex gap-3 rounded-xl p-3 transition-colors hover:bg-navy-50">
+                <span class="icon-tile size-9 rounded-lg">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="12" rx="2" /><path d="M8 20h8M12 16v4" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-sm font-semibold text-navy-900">ICT Services</span>
+                  <span class="mt-0.5 block text-xs text-slate-500">Network setup &amp; repairs, Starlink installs, computer sales, databases &amp; websites</span>
+                </span>
+              </a>
+              <a href="services.html#ict-trainings" class="group flex gap-3 rounded-xl p-3 transition-colors hover:bg-navy-50">
+                <span class="icon-tile size-9 rounded-lg">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M12 4 2.5 9 12 14l9.5-5L12 4Z" /><path d="M6 11v4.5c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5V11" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-sm font-semibold text-navy-900">ICT Trainings</span>
+                  <span class="mt-0.5 block text-xs text-slate-500">Basic computing, Microsoft Office, timetabling &amp; internet training</span>
+                </span>
+              </a>
+              <div class="mt-1.5 rounded-xl bg-navy-950 p-3.5">
+                <p class="text-sm font-semibold text-white">Not sure where to start?</p>
+                <p class="mt-0.5 text-xs text-slate-300">Talk to us — a free first consultation.</p>
+                <button type="button" data-modal-open="audit-modal" class="link-arrow mt-2 text-teal-300">
+                  Get in touch
+                  <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <a href="industries.html" class="nav-link" data-nav="industries">Industries</a>
+          <a href="about.html" class="nav-link" data-nav="about" aria-current="page">About</a>
+          <a href="resources.html" class="nav-link" data-nav="resources">Resources</a>
+          <a href="contact.html" class="nav-link" data-nav="contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a href="contact.html" class="hidden text-sm font-semibold text-navy-800 hover:text-electric-700 sm:inline lg:hidden xl:inline"
+            >Contact</a
+          >
+          <button type="button" data-modal-open="audit-modal" class="btn-primary btn-sm hidden sm:inline-flex">
+            Get a Free Quote
+          </button>
+          <button
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            class="btn-outline btn-sm -mr-1 size-10 justify-center p-0 lg:hidden"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg data-icon-open class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+            </svg>
+            <svg data-icon-close class="hidden size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile drawer -->
+      <div id="mobile-menu" data-nav-menu hidden class="lg:hidden">
+        <div data-nav-panel class="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-slate-200 bg-white pb-6">
+          <nav class="container-page flex flex-col gap-1 pt-4" aria-label="Mobile">
+            <a href="index.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="home">Home</a>
+
+            <div data-submenu>
+              <button
+                type="button"
+                class="flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-left text-base font-semibold text-navy-900"
+                data-submenu-trigger
+                data-nav="services"
+                aria-expanded="false"
+                aria-controls="mobile-services"
+              >
+                Services
+                <svg class="size-4 text-slate-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              <div id="mobile-services" data-submenu-panel>
+                <div>
+                  <ul class="mt-1 space-y-0.5 border-l-2 border-slate-200 pl-3">
+                    <li><a href="services.html#business-services" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">Business Services</a></li>
+                    <li><a href="services.html#ict-services" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">ICT Services</a></li>
+                    <li><a href="services.html#ict-trainings" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-navy-50 hover:text-navy-900">ICT Trainings</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <a href="industries.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="industries">Industries</a>
+            <a href="about.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="about" aria-current="page">About</a>
+            <a href="resources.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="resources">Resources</a>
+            <a href="contact.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-navy-900" data-nav="contact">Contact</a>
+
+            <button type="button" data-modal-open="audit-modal" class="btn-primary mt-3 w-full">Get a Free Quote</button>
+            <p class="mt-4 px-3 text-xs text-slate-500">
+              Mon–Fri · Alotau, Milne Bay ·
+              <a href="tel:+67582545274" class="font-semibold text-navy-800">+675 82545274</a>
+            </p>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+<!-- ============================== PAGE HERO ============================= -->
+<section class="relative overflow-hidden bg-navy-950 text-white">
+  <div class="bg-grid absolute inset-0 opacity-60" aria-hidden="true"></div>
+  <div class="absolute -top-28 right-10 size-[30rem] rounded-full bg-electric-500/16 blur-[110px]" aria-hidden="true"></div>
+
+  <div class="container-page relative py-18 sm:py-20 lg:py-24">
+    <nav aria-label="Breadcrumb" class="mb-7">
+      <ol class="flex flex-wrap items-center gap-2 text-xs text-slate-400">
+        <li><a href="index.html" class="transition-colors hover:text-teal-300">Home</a></li>
+        <li aria-hidden="true">/</li>
+        <li><span class="font-medium text-slate-200" aria-current="page">About</span></li>
+      </ol>
+    </nav>
+
+    <div class="max-w-3xl">
+      <p class="eyebrow eyebrow-dark">About us</p>
+      <h1 class="h1 mt-5 text-white">We built the local Business &amp; ICT partner Milne Bay needs</h1>
+      <p class="mt-6 text-lg leading-relaxed text-slate-300">
+        KILSTA Business &amp; ICT Consultants is a locally owned consultancy from Alotau, Milne Bay.
+        We started because our communities and local businesses deserve affordable, quality Business
+        and ICT support they can rely on — delivered by people from right here in the province.
+      </p>
+      <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+        <button type="button" data-modal-open="audit-modal" class="btn-accent btn-lg">Work with us</button>
+        <a href="#team" class="btn-ghost-light btn-lg">Meet the team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== STATS BAR ============================= -->
+<section class="border-b border-slate-200 bg-slate-50/80 py-12">
+  <div class="container-page">
+    <div class="grid grid-cols-2 gap-8 lg:grid-cols-4">
+      <div data-reveal>
+        <p class="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">2024</p>
+        <p class="mt-2 text-sm font-medium text-slate-600">Registered with the IPA</p>
+      </div>
+      <div data-reveal data-reveal-delay="80">
+        <p class="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
+          <span data-counter="4">4</span>
+        </p>
+        <p class="mt-2 text-sm font-medium text-slate-600">Permanent staff</p>
+      </div>
+      <div data-reveal data-reveal-delay="160">
+        <p class="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
+          <span data-counter="3">3</span>
+        </p>
+        <p class="mt-2 text-sm font-medium text-slate-600">Service pillars</p>
+      </div>
+      <div data-reveal data-reveal-delay="240">
+        <p class="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
+          <span data-counter="100" data-suffix="%">100%</span>
+        </p>
+        <p class="mt-2 text-sm font-medium text-slate-600">Locally owned</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== OUR STORY ============================= -->
+<section class="section bg-white">
+  <div class="container-page">
+    <div class="grid gap-14 lg:grid-cols-12 lg:gap-16">
+      <div class="lg:col-span-5" data-reveal>
+        <p class="eyebrow">Our story</p>
+        <h2 class="h2 mt-5">From a 2022 idea to a registered Milne Bay business</h2>
+        <p class="mt-5 leading-relaxed text-slate-600">
+          The idea for KILSTA was conceived in 2022 by men from Milne Bay who had watched local
+          businesses and organisations struggle to find dependable Business and ICT support in the
+          province. Two years later, in 2024, that idea became a registered sole proprietorship —
+          KILSTA Business &amp; ICT Consultants.
+        </p>
+        <p class="mt-4 leading-relaxed text-slate-600">
+          Our staff have returned to Alotau to pursue this opportunity, bringing experience from
+          other business, ICT and education organisations. We are a young, newly registered company,
+          and our aim is simple: serve our clients well, grow steadily from small to medium scale,
+          and open as many job opportunities and career paths as possible for young people from our
+          local communities and the province.
+        </p>
+
+        <div class="mt-9 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <p class="text-sm font-semibold text-navy-900">Locally owned and run</p>
+          <p class="mt-1.5 text-sm leading-relaxed text-slate-600">
+            KILSTA is 100% owned and run by men from Milne Bay. We operate a centralised project
+            management model from a home-based office, with plans to establish a central office in
+            Alotau town as we grow.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="lg:col-span-7" data-reveal data-reveal-delay="100">
+        <ol class="relative space-y-8 border-l-2 border-slate-200 pl-8">
+          <li class="relative">
+            <span class="absolute top-1 -left-[2.42rem] flex size-5 items-center justify-center rounded-full bg-electric-600 ring-4 ring-white"></span>
+            <p class="font-mono text-2xs font-semibold text-electric-700">2022</p>
+            <h3 class="h3 mt-1.5">The idea is conceived</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">
+              Men from Milne Bay identify the need for a local Business &amp; ICT partner and begin
+              shaping the idea for KILSTA.
+            </p>
+          </li>
+          <li class="relative">
+            <span class="absolute top-1 -left-[2.42rem] flex size-5 items-center justify-center rounded-full bg-electric-600 ring-4 ring-white"></span>
+            <p class="font-mono text-2xs font-semibold text-electric-700">2024</p>
+            <h3 class="h3 mt-1.5">Registered with the IPA</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">
+              KILSTA Business &amp; ICT Consultants becomes a registered sole proprietorship
+              (IPA No. 6-129295384) based in Alotau, Milne Bay Province.
+            </p>
+          </li>
+          <li class="relative">
+            <span class="absolute top-1 -left-[2.42rem] flex size-5 items-center justify-center rounded-full bg-teal-500 ring-4 ring-white"></span>
+            <p class="font-mono text-2xs font-semibold text-teal-700">Today</p>
+            <h3 class="h3 mt-1.5">Serving individual clients in and around Alotau</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">
+              We are a small, emerging team providing Business, ICT and ICT training services to
+              individual clients in and around Alotau, backed by our managers' prior experience.
+            </p>
+          </li>
+          <li class="relative">
+            <span class="absolute top-1 -left-[2.42rem] flex size-5 items-center justify-center rounded-full bg-teal-500 ring-4 ring-white"></span>
+            <p class="font-mono text-2xs font-semibold text-teal-700">Ahead</p>
+            <h3 class="h3 mt-1.5">Growing from small to medium scale</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">
+              Our next step is to grow from small to medium scale and establish a central office in
+              Alotau town once we have the capital to do so.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== VALUES =============================== -->
+<section class="section bg-slate-50">
+  <div class="container-page">
+    <div class="max-w-2xl" data-reveal>
+      <p class="eyebrow">What we stand for</p>
+      <h2 class="h2 mt-5">Four commitments we do not negotiate on</h2>
+      <p class="lede mt-5">
+        These values guide how we work with our clients, look after our people, and serve the
+        communities and province we come from.
+      </p>
+    </div>
+
+    <div class="mt-14 grid gap-6 md:grid-cols-2">
+      <article class="card p-7" data-reveal>
+        <span class="icon-tile">
+          <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <path d="M12 3l7 3v5.5c0 4.2-2.9 7.6-7 8.5-4.1-.9-7-4.3-7-8.5V6l7-3Z" />
+            <path d="M9 12l2 2 4-4" />
+          </svg>
+        </span>
+        <h3 class="h3 mt-6">Respect for PNG laws and professionalism</h3>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">
+          We respect the laws of Papua New Guinea, the constitution and our labour laws. We hold
+          ourselves to professional, ethical standards in every engagement we take on.
+        </p>
+      </article>
+
+      <article class="card p-7" data-reveal data-reveal-delay="80">
+        <span class="icon-tile">
+          <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <path d="M4 19.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13.5" />
+            <path d="M8 4v15.5M16 4v15.5M2 21h20M9.5 9h5M9.5 12.5h5" />
+          </svg>
+        </span>
+        <h3 class="h3 mt-6">Client satisfaction and quality output</h3>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">
+          We aim for client satisfaction and quality output delivered within the agreed time and
+          budget. We want every client to feel they received fair value for what they paid.
+        </p>
+      </article>
+
+      <article class="card p-7" data-reveal data-reveal-delay="160">
+        <span class="icon-tile">
+          <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <circle cx="9" cy="8" r="3.2" /><circle cx="17" cy="10" r="2.4" />
+            <path d="M3 19a6 6 0 0 1 12 0M15.5 19a4.5 4.5 0 0 1 5.5-3.4" />
+          </svg>
+        </span>
+        <h3 class="h3 mt-6">Valuing our employees' time and effort</h3>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">
+          We value the time and effort of our staff, and we run an appraisal system that rewards
+          performance so that good work is recognised and people can build a career with us.
+        </p>
+      </article>
+
+      <article class="card p-7" data-reveal data-reveal-delay="240">
+        <span class="icon-tile">
+          <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <path d="M12 3.5c-2 3-4.5 4.5-7 5.5 1 5 3.5 9 7 11.5 3.5-2.5 6-6.5 7-11.5-2.5-1-5-2.5-7-5.5Z" />
+            <path d="M9.5 12.5 11.5 14.5 15 11" />
+          </svg>
+        </span>
+        <h3 class="h3 mt-6">Positive community development</h3>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">
+          We are committed to positive community development, especially in the lives of as many
+          young people as we can reach in our local communities and across Milne Bay Province.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================ TEAM ================================ -->
+<section id="team" class="section bg-white">
+  <div class="container-page">
+    <div class="max-w-2xl" data-reveal>
+      <p class="eyebrow">Leadership</p>
+      <h2 class="h2 mt-5">The people accountable for your account</h2>
+      <p class="lede mt-5">
+        KILSTA is led by a small team of four managers, supported by assistants and casual staff.
+        These are the people responsible for your work.
+      </p>
+    </div>
+
+    <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <article class="card-hover p-7 text-center" data-reveal>
+        <span class="mx-auto flex size-20 items-center justify-center rounded-2xl bg-navy-900 text-xl font-bold text-white">WH</span>
+        <h3 class="h3 mt-5">Wilson Hugh</h3>
+        <p class="mt-1 text-sm font-medium text-electric-700">Legal Owner &amp; Director</p>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">
+          Holds a Bachelor in Pure Economics and a Diploma in Accounting (UPNG), with experience in
+          administrative and leadership roles across private and government organisations.
+        </p>
+        <a href="mailto:kilsta2023@gmail.com" class="link-arrow mt-4 justify-center">kilsta2023@gmail.com</a>
+      </article>
+
+      <article class="card-hover p-7 text-center" data-reveal data-reveal-delay="80">
+        <span class="mx-auto flex size-20 items-center justify-center rounded-2xl bg-electric-600 text-xl font-bold text-white">CJ</span>
+        <h3 class="h3 mt-5">Clifford Jones</h3>
+        <p class="mt-1 text-sm font-medium text-electric-700">Training Manager</p>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">
+          Holds a Post Graduate Diploma in Professional Computing (University of Southern
+          Queensland, Australia), a Diploma in Business Management (ITI) and a Bachelor &amp;
+          Diploma in Computer Science (PNG Unitech).
+        </p>
+        <a href="mailto:kilsta2023@gmail.com" class="link-arrow mt-4 justify-center">kilsta2023@gmail.com</a>
+      </article>
+
+      <article class="card-hover p-7 text-center" data-reveal data-reveal-delay="160">
+        <span class="mx-auto flex size-20 items-center justify-center rounded-2xl bg-teal-600 text-xl font-bold text-white">SY</span>
+        <h3 class="h3 mt-5">Stallone Yabom</h3>
+        <p class="mt-1 text-sm font-medium text-electric-700">ICT Manager</p>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">
+          Holds a Bachelor in Natural Science, Pure Mathematics, Pure Physics, Computer Science
+          and leads our ICT services and technical delivery.
+        </p>
+        <a href="mailto:kilsta2023@gmail.com" class="link-arrow mt-4 justify-center">kilsta2023@gmail.com</a>
+      </article>
+
+      <article class="card-hover p-7 text-center" data-reveal data-reveal-delay="240">
+        <span class="mx-auto flex size-20 items-center justify-center rounded-2xl bg-navy-700 text-xl font-bold text-white">LL</span>
+        <h3 class="h3 mt-5">Liaison &amp; Logistics Manager</h3>
+        <p class="mt-1 text-sm font-medium text-electric-700">Position</p>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">
+          Our Liaison and Logistics Manager coordinates client liaison, scheduling and logistics
+          across our projects and service pillars.
+        </p>
+        <a href="mailto:kilsta2023@gmail.com" class="link-arrow mt-4 justify-center">kilsta2023@gmail.com</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CREDENTIALS =========================== -->
+<section class="section bg-slate-50">
+  <div class="container-page">
+    <div class="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+      <div class="lg:col-span-6" data-reveal>
+        <p class="eyebrow">Credentials</p>
+        <h2 class="h2 mt-5">Company credentials &amp; qualifications</h2>
+        <p class="mt-5 leading-relaxed text-slate-600">
+          KILSTA is a registered sole proprietorship in Papua New Guinea. Our strength is the
+          training and qualifications our managers bring to every engagement.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-2.5">
+          <span class="badge-brand px-3 py-1.5">IPA No. 6-129295384</span>
+          <span class="badge-brand px-3 py-1.5">TIN 502603269</span>
+          <span class="badge-brand px-3 py-1.5">Registered 2024</span>
+          <span class="badge-brand px-3 py-1.5">Sole proprietorship</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6" data-reveal data-reveal-delay="100">
+        <div class="card p-7">
+          <h3 class="h3">Team qualifications in-house</h3>
+          <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+            <li class="flex items-center gap-3 text-sm text-slate-700">
+              <span class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-electric-500/10 text-electric-700">
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4.5 4.5L19 7" /></svg>
+              </span>
+              Bachelor in Pure Economics (UPNG)
+            </li>
+            <li class="flex items-center gap-3 text-sm text-slate-700">
+              <span class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-electric-500/10 text-electric-700">
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4.5 4.5L19 7" /></svg>
+              </span>
+              Diploma in Accounting (UPNG)
+            </li>
+            <li class="flex items-center gap-3 text-sm text-slate-700">
+              <span class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-electric-500/10 text-electric-700">
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4.5 4.5L19 7" /></svg>
+              </span>
+              Post Grad Diploma in Professional Computing (USQ)
+            </li>
+            <li class="flex items-center gap-3 text-sm text-slate-700">
+              <span class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-electric-500/10 text-electric-700">
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4.5 4.5L19 7" /></svg>
+              </span>
+              Diploma in Business Management (ITI)
+            </li>
+            <li class="flex items-center gap-3 text-sm text-slate-700">
+              <span class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-electric-500/10 text-electric-700">
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4.5 4.5L19 7" /></svg>
+              </span>
+              Bachelor &amp; Diploma in Computer Science (PNG Unitech)
+            </li>
+            <li class="flex items-center gap-3 text-sm text-slate-700">
+              <span class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-electric-500/10 text-electric-700">
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4.5 4.5L19 7" /></svg>
+              </span>
+              Bachelor in Natural Science
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================ CAREERS ============================= -->
+<section id="careers" class="section bg-white">
+  <div class="container-page">
+    <div class="grid gap-12 lg:grid-cols-12 lg:gap-16">
+      <div class="lg:col-span-5" data-reveal>
+        <p class="eyebrow">Careers</p>
+        <h2 class="h2 mt-5">Growing team, career paths for local youth</h2>
+        <p class="mt-5 leading-relaxed text-slate-600">
+          KILSTA exists to create opportunities, especially for young people from our local
+          communities. As we grow from small to medium scale, we want to bring more people on
+          board and help them build real careers in Business and ICT.
+        </p>
+        <ul class="check-list mt-8 text-sm">
+          <li>Career paths for youth from local communities and the province</li>
+          <li>An appraisal system that rewards performance</li>
+          <li>Work across our Business, ICT and ICT training services</li>
+          <li>Plans to establish a central office in Alotau town</li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-7" data-reveal data-reveal-delay="100">
+        <div class="card p-6 sm:p-8">
+          <h3 class="h3">No current vacancies advertised</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-600">
+            We are a new, emerging company and we are not always actively advertising roles. That
+            said, we are always glad to hear from people in and around Alotau who have skills or
+            ambition in Business, ICT or training and who want to grow with us. Send us an open
+            application and tell us what you can do.
+          </p>
+          <div class="mt-6">
+            <a href="mailto:kilsta2023@gmail.com" class="btn-primary btn-sm">Send an open application</a>
+          </div>
+        </div>
+        <p class="mt-5 text-sm text-slate-500">
+          Open applications can be sent to
+          <a href="mailto:kilsta2023@gmail.com" class="font-semibold text-electric-700 hover:underline">kilsta2023@gmail.com</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== CTA BAND ============================ -->
+<section class="relative overflow-hidden bg-navy-950 py-20 text-white sm:py-24">
+  <div class="bg-grid absolute inset-0 opacity-50" aria-hidden="true"></div>
+  <div class="absolute -bottom-32 left-1/4 size-[28rem] rounded-full bg-electric-500/14 blur-[110px]" aria-hidden="true"></div>
+
+  <div class="container-page relative">
+    <div class="mx-auto max-w-2xl text-center" data-reveal>
+      <h2 class="h2 text-white">Let's talk about your business or ICT needs</h2>
+      <p class="mt-5 text-lg leading-relaxed text-slate-300">
+        Start with a free first consultation. Tell us what you need, and we will give you an
+        honest, affordable way forward — no obligation.
+      </p>
+      <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+        <button type="button" data-modal-open="audit-modal" class="btn-accent btn-lg">Get a Free Quote</button>
+        <a href="resources.html" class="btn-ghost-light btn-lg">Read our guides</a>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+
+<!-- ============================== FOOTER ============================== -->
+    <footer class="bg-navy-950 text-slate-300">
+      <div class="container-page py-16">
+        <div class="grid gap-12 lg:grid-cols-12">
+          <div class="lg:col-span-4">
+            <a href="index.html" class="flex items-center" aria-label="KILSTA Business &amp; ICT Consultants — home">
+              <img src="assets/img/logo.jpg" alt="" class="block size-7 object-contain" />
+            </a>
+            <p class="mt-5 max-w-sm text-sm leading-relaxed text-slate-400">
+              A locally owned Business &amp; ICT consulting practice in Alotau, Milne Bay Province.
+              We help individuals, small businesses and organisations with business registration,
+              bookkeeping, IT support and practical computing training.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="badge-dark">IPA 6-129295384</span>
+              <span class="badge-dark">TIN 502603269</span>
+            </div>
+            <!-- Social: replace the platform home URLs below with KILSTA's real page URLs -->
+            <div class="mt-6 flex items-center gap-2.5">
+              <a href="https://youtube.com/@stalloneyabom9353" target="_blank" rel="noopener noreferrer" aria-label="KILSTA on YouTube" class="flex size-9 items-center justify-center rounded-full border border-white/15 text-slate-400 transition-colors hover:border-teal-300/50 hover:text-teal-300">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z" />
+                </svg>
+              </a>
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="KILSTA on Facebook" class="flex size-9 items-center justify-center rounded-full border border-white/15 text-slate-400 transition-colors hover:border-teal-300/50 hover:text-teal-300">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07Z" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="KILSTA on LinkedIn" class="flex size-9 items-center justify-center rounded-full border border-white/15 text-slate-400 transition-colors hover:border-teal-300/50 hover:text-teal-300">
+                <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <nav class="lg:col-span-2" aria-label="Footer — services">
+            <h2 class="text-2xs font-semibold tracking-[0.18em] text-white uppercase">Services</h2>
+            <ul class="mt-5 space-y-3 text-sm">
+              <li><a href="services.html#business-services" class="text-slate-400 transition-colors hover:text-teal-300">Business Services</a></li>
+              <li><a href="services.html#ict-services" class="text-slate-400 transition-colors hover:text-teal-300">ICT Services</a></li>
+              <li><a href="services.html#ict-trainings" class="text-slate-400 transition-colors hover:text-teal-300">ICT Trainings</a></li>
+            </ul>
+          </nav>
+
+          <nav class="lg:col-span-2" aria-label="Footer — company">
+            <h2 class="text-2xs font-semibold tracking-[0.18em] text-white uppercase">Company</h2>
+            <ul class="mt-5 space-y-3 text-sm">
+              <li><a href="about.html" class="text-slate-400 transition-colors hover:text-teal-300">About Us</a></li>
+              <li><a href="industries.html" class="text-slate-400 transition-colors hover:text-teal-300">Who We Serve</a></li>
+              <li><a href="resources.html" class="text-slate-400 transition-colors hover:text-teal-300">Resources</a></li>
+              <li><a href="contact.html" class="text-slate-400 transition-colors hover:text-teal-300">Contact</a></li>
+              <li><a href="resources.html#faq" class="text-slate-400 transition-colors hover:text-teal-300">FAQ</a></li>
+              <li><a href="about.html#careers" class="text-slate-400 transition-colors hover:text-teal-300">Careers</a></li>
+            </ul>
+          </nav>
+
+          <div class="lg:col-span-4">
+            <h2 class="text-2xs font-semibold tracking-[0.18em] text-white uppercase">Get in touch</h2>
+            <address class="mt-5 space-y-3 text-sm not-italic text-slate-400">
+              <p class="flex gap-3">
+                <svg class="mt-0.5 size-4 shrink-0 text-teal-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M20 10.5c0 5.2-8 12-8 12s-8-6.8-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10.5" r="2.8" />
+                </svg>
+                <span>Gumini Village, Huhu LLG, Alotau District<br />Milne Bay Province, Papua New Guinea</span>
+              </p>
+              <p class="flex gap-3">
+                <svg class="mt-0.5 size-4 shrink-0 text-teal-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3.5 6.5 8.5 6 8.5-6" />
+                </svg>
+                <span>P.O Box 424, Alotau<br />Milne Bay Province, Papua New Guinea</span>
+              </p>
+              <p class="flex gap-3">
+                <svg class="mt-0.5 size-4 shrink-0 text-teal-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M5 4h3.2l1.8 4.5-2 1.4a12 12 0 0 0 5.6 5.6l1.4-2L19.5 17v3a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 6.1 1.5 1.5 0 0 1 5 4Z" />
+                </svg>
+                <a href="tel:+67582545274" class="transition-colors hover:text-teal-300">+675 82545274</a>
+              </p>
+              <p class="flex gap-3">
+                <svg class="mt-0.5 size-4 shrink-0 text-teal-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3.5 6.5 8.5 6 8.5-6" />
+                </svg>
+                <a href="mailto:kilsta2023@gmail.com" class="transition-colors hover:text-teal-300">kilsta2023@gmail.com</a>
+              </p>
+            </address>
+          </div>
+        </div>
+
+        <div class="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; <span data-year>2026</span> KILSTA Business &amp; ICT Consultants. All rights reserved.</p>
+          <ul class="flex flex-wrap gap-x-6 gap-y-2">
+            <li><a href="legal.html#privacy" class="transition-colors hover:text-teal-300">Privacy Policy</a></li>
+            <li><a href="legal.html#terms" class="transition-colors hover:text-teal-300">Terms of Service</a></li>
+            <li><a href="legal.html#sla" class="transition-colors hover:text-teal-300">Service Pledge</a></li>
+            <li><a href="contact.html" class="transition-colors hover:text-teal-300">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+<div
+      id="audit-modal"
+      data-modal
+      hidden
+      class="fixed inset-0 z-[90] flex items-end justify-center overflow-y-auto bg-navy-975/70 p-0 backdrop-blur-sm sm:items-center sm:p-6"
+    >
+      <div
+        data-modal-panel
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="audit-modal-title"
+        class="relative w-full max-w-2xl rounded-t-3xl bg-white shadow-card-lg sm:rounded-3xl"
+      >
+        <button
+          type="button"
+          data-modal-close
+          class="absolute top-4 right-4 z-10 flex size-9 items-center justify-center rounded-full text-slate-400 transition-colors hover:bg-slate-100 hover:text-navy-900"
+        >
+          <span class="sr-only">Close dialog</span>
+          <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Header band -->
+        <div class="relative overflow-hidden rounded-t-3xl bg-navy-950 px-6 py-7 sm:px-8">
+          <div class="bg-grid absolute inset-0 opacity-60" aria-hidden="true"></div>
+          <div class="absolute -top-16 -right-10 size-56 rounded-full bg-electric-500/25 blur-3xl" aria-hidden="true"></div>
+          <div class="relative">
+            <p class="eyebrow eyebrow-dark">Free · no obligation</p>
+            <h2 id="audit-modal-title" class="h2 mt-3 text-white">Get a Free Quote</h2>
+            <p class="mt-2 text-sm text-slate-300">
+              Tell us what you need and we'll reply with practical next steps and an affordable,
+              negotiable quote — even if you decide not to work with us.
+            </p>
+          </div>
+        </div>
+
+        <div class="max-h-[70dvh] overflow-y-auto px-6 py-6 sm:px-8 sm:py-7">
+          <p data-form-summary role="alert" hidden class="mb-5 rounded-xl border border-danger-500/30 bg-danger-500/[0.07] px-4 py-3 text-sm font-medium text-danger-600"></p>
+
+          <form data-validate novalidate class="grid gap-5 sm:grid-cols-2">
+            <div>
+              <label class="label" for="m-name">Full name <span class="text-danger-600">*</span></label>
+              <input class="input" type="text" id="m-name" name="name" autocomplete="name" required minlength="2" placeholder="John Kila" />
+            </div>
+            <div>
+              <label class="label" for="m-email">Email <span class="text-danger-600">*</span></label>
+              <input class="input" type="email" id="m-email" name="email" autocomplete="email" required placeholder="you@email.com" />
+            </div>
+            <div>
+              <label class="label" for="m-company">Business or organisation</label>
+              <input class="input" type="text" id="m-company" name="company" autocomplete="organization" placeholder="Optional" />
+            </div>
+            <div>
+              <label class="label" for="m-users">Enquiring as</label>
+              <select class="select" id="m-users" name="enquiry">
+                <option value="">Select…</option>
+                <option>Individual</option>
+                <option>Small business</option>
+                <option>School or institution</option>
+                <option>Government or LLG</option>
+                <option>Church or NGO</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="label" for="m-service">Service needed <span class="text-danger-600">*</span></label>
+              <select class="select" id="m-service" name="service" required>
+                <option value="">Choose a service…</option>
+                <option>Business Services</option>
+                <option>ICT Services</option>
+                <option>ICT Trainings</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="label" for="m-message">What should we know? <span class="text-danger-600">*</span></label>
+              <textarea class="textarea" id="m-message" name="message" required minlength="20" placeholder="e.g. I need help registering a business name with IPA and applying for a TIN, or setting up a network and installing a Starlink kit."></textarea>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="flex cursor-pointer items-start gap-3 text-sm text-slate-600">
+                <input type="checkbox" name="consent" required class="mt-0.5 size-4 shrink-0 rounded border-slate-300 text-electric-600 focus:ring-2 focus:ring-electric-500/30" />
+                <span>I agree to be contacted about this request. <span class="text-danger-600">*</span></span>
+              </label>
+            </div>
+            <div class="sm:col-span-2">
+              <button type="submit" class="btn-primary btn-lg btn-block">
+                Send my request
+                <svg class="size-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </button>
+              <p data-form-status role="status" aria-live="polite" class="mt-3 text-center text-sm font-medium text-slate-600"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
